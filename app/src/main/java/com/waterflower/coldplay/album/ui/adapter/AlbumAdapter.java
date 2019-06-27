@@ -8,6 +8,7 @@ import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
 import com.waterflower.coldplay.R;
 import com.waterflower.coldplay.album.bean.NewListBean;
+import com.waterflower.coldplay.waterflower.adapter.MyBaseAdapter;
 import com.waterflower.coldplay.waterflower.basic.manager.ImageManager;
 import com.zhy.autolayout.utils.AutoUtils;
 
@@ -18,7 +19,7 @@ import com.zhy.autolayout.utils.AutoUtils;
  * Desc :  新房适配器
  */
 
-public class AlbumAdapter extends BaseQuickAdapter<NewListBean.DataBean, BaseViewHolder> {
+public class AlbumAdapter extends MyBaseAdapter<NewListBean.DataBean> {
 
     private Context context;
 
@@ -28,11 +29,7 @@ public class AlbumAdapter extends BaseQuickAdapter<NewListBean.DataBean, BaseVie
 
     }
 
-    @Override
-    protected BaseViewHolder createBaseViewHolder(View view) {
-        AutoUtils.auto(view);
-        return new BaseViewHolder(view);
-    }
+
 
 
 

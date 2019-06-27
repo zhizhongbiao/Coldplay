@@ -1,0 +1,1293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/theme_gray">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_white"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/llUploadEstatePic"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60px"
+                android:text="楼盘封面:"
+                android:textColor="@color/text_gray_deep" />
+
+            <ImageView
+                android:layout_width="90px"
+                android:layout_height="90px"
+                android:layout_marginLeft="60px"
+                android:src="@mipmap/add2"
+                app:layout_auto_basewidth="height" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60px"
+                android:text="上传楼盘封面(1张)"
+                android:textColor="@color/edit_text_gray" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View style="@style/split_line_gray_hor" />
+
+
+        <cn.com.tianyudg.android_agent.base.basic.widget.image.LoadingImageView
+            android:id="@+id/ivEstate"
+            android:layout_width="300px"
+            android:layout_height="240px"
+            android:layout_margin="60px"
+            android:src="@mipmap/place_holder" />
+
+
+        <View style="@style/split_line_gray_hor" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60px"
+                android:text="项目名称："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="42px" />
+
+            <EditText
+                android:id="@+id/etProjectName"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="输入项目名称"
+                android:inputType="text"
+                android:textColor="@color/text_gray_deep"
+                android:textColorHint="@color/edit_text_gray"
+                android:textSize="42px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View style="@style/split_line_gray_hor" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/llBelongEstate"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60px"
+                android:text="所属楼盘："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="42px" />
+
+            <TextView
+                android:id="@+id/tvBelongEstate"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请选择所属楼盘"
+                android:textColor="@color/text_gray_deep"
+                android:textColorHint="@color/edit_text_gray"
+                android:textSize="42px" />
+
+            <ImageView
+                android:layout_width="30px"
+                android:layout_height="52px"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="60px"
+                android:src="@mipmap/arrow_right" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View style="@style/split_line_gray_hor" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/llPropetyType"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60px"
+                android:text="物业类型："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="42px" />
+
+            <TextView
+                android:id="@+id/tvPropertyType"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="住宅"
+                android:textColor="@color/text_gray_deep"
+                android:textColorHint="@color/edit_text_gray"
+                android:textSize="42px" />
+
+            <ImageView
+                android:layout_width="30px"
+                android:layout_height="52px"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="60px"
+                android:src="@mipmap/arrow_right" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View style="@style/split_line_gray_hor" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60px"
+                android:text="项目均价："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="42px" />
+
+            <EditText
+                android:id="@+id/etPrice"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:inputType="number"
+                android:textColor="@color/text_gray_deep"
+                android:textColorHint="@color/edit_text_gray"
+                android:textSize="42px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginRight="60px"
+                android:text="元/㎡"
+                android:textColor="@color/text_black"
+                android:textSize="42px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View style="@style/split_line_gray_hor" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60px"
+                android:text="项目面积："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="42px" />
+
+            <EditText
+                android:id="@+id/etSquare"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:inputType="number"
+                android:textColor="@color/text_gray_deep"
+                android:textColorHint="@color/edit_text_gray"
+                android:textSize="42px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginRight="60px"
+                android:text="㎡"
+                android:textColor="@color/text_black"
+                android:textSize="42px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View style="@style/split_line_gray_hor" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60px"
+                android:text="在售房源："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="42px" />
+
+            <EditText
+
+                android:id="@+id/etSalingHouseSource"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:inputType="number"
+                android:textColor="@color/text_gray_deep"
+                android:textColorHint="@color/edit_text_gray"
+                android:textSize="42px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginRight="60px"
+                android:text="套"
+                android:textColor="@color/text_black"
+                android:textSize="42px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View style="@style/split_line_gray_hor" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20px"
+            android:background="@color/theme_gray" />
+
+        <View style="@style/split_line_gray_hor" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60px"
+                android:text="项目对接："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="42px" />
+
+            <EditText
+                android:id="@+id/etProjectMatch"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:inputType="text"
+                android:textColorHint="@color/edit_text_gray"
+                android:textSize="42px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View style="@style/split_line_gray_hor" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60px"
+                android:text="手机号码："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="42px" />
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:inputType="phone"
+                android:textColor="@color/text_gray_deep"
+                android:textColorHint="@color/edit_text_gray"
+                android:textSize="42px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View style="@style/split_line_gray_hor" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/llStartTime"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60px"
+                android:text="开始时间："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="42px" />
+
+            <TextView
+                android:id="@+id/tvStartTime"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:background="@null"
+                android:textColorHint="@color/edit_text_gray"
+                android:textSize="42px" />
+
+            <ImageView
+                android:layout_width="30px"
+                android:layout_height="52px"
+                android:layout_marginRight="60px"
+                android:src="@mipmap/arrow_right" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View style="@style/split_line_gray_hor" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/llEndTime"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60px"
+                android:text="结束时间："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="42px" />
+
+            <TextView
+                android:id="@+id/tvEndTime"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:background="@null"
+                android:textColorHint="@color/edit_text_gray"
+                android:textSize="42px" />
+
+            <ImageView
+                android:layout_width="30px"
+                android:layout_height="52px"
+                android:layout_marginRight="60px"
+                android:src="@mipmap/arrow_right" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View style="@style/split_line_gray_hor" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20px"
+            android:background="@color/theme_gray" />
+
+        <View style="@style/split_line_gray_hor" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/rlReportType"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60px"
+                android:text="报备方式："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="42px" />
+
+            <TextView
+                android:id="@+id/tvReportType"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="前三后四"
+                android:textColor="@color/text_black"
+                android:textSize="42px" />
+
+            <ImageView
+                android:layout_width="30px"
+                android:layout_height="52px"
+
+                android:layout_marginRight="60px"
+                android:src="@mipmap/arrow_right" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View style="@style/split_line_gray_hor" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/llReportAudit"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60px"
+                android:text="报备审核："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="42px" />
+
+            <TextView
+                android:id="@+id/tvReportAudit"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="自动审核"
+                android:textColor="@color/text_black"
+                android:textSize="42px" />
+
+            <ImageView
+                android:layout_width="30px"
+                android:layout_height="52px"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="60px"
+                android:src="@mipmap/arrow_right" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View style="@style/split_line_gray_hor" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60px"
+                android:text="客户保护期："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="42px" />
+
+            <EditText
+                android:id="@+id/etClientProtectDay"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:inputType="number"
+                android:text="30"
+                android:textColor="@color/text_black"
+                android:textSize="42px" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="60px"
+                android:text="天"
+                android:textColor="@color/text_black"
+                android:textSize="42px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View style="@style/split_line_gray_hor" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60px"
+                android:text="看房保护期："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="42px" />
+
+            <EditText
+                android:id="@+id/etLookHouseProtectDay"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:inputType="number"
+                android:text="30"
+                android:textColor="@color/text_black"
+                android:textSize="42px" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="60px"
+                android:text="天"
+                android:textColor="@color/text_black"
+                android:textSize="42px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+        <View style="@style/split_line_gray_hor" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20px"
+            android:background="@color/theme_gray" />
+
+        <View style="@style/split_line_gray_hor" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/rlWhoProvideCommission"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60px"
+                android:text="结佣主体："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="42px" />
+
+            <TextView
+                android:id="@+id/tvWhoProvideCommission"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:text="开发商"
+                android:textColor="@color/text_black"
+                android:textSize="42px" />
+
+            <ImageView
+                android:layout_width="30px"
+                android:layout_height="52px"
+                android:layout_marginRight="60px"
+                android:src="@mipmap/arrow_right" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View style="@style/split_line_gray_hor" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/llCommissionType"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60px"
+                android:text="佣金类型："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="42px" />
+
+            <TextView
+                android:id="@+id/tvCommissionType"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:text="比例佣金"
+                android:textColor="@color/text_black"
+                android:textSize="42px" />
+
+            <ImageView
+                android:layout_width="30px"
+                android:layout_height="52px"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="60px"
+                android:src="@mipmap/arrow_right" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View style="@style/split_line_gray_hor" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60px"
+                android:text="结佣节点："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="42px" />
+
+            <TextView
+                android:id="@+id/etCommissionPoint"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="签约成功"
+                android:textColor="@color/text_black"
+                android:textSize="42px" />
+
+            <ImageView
+                android:layout_width="30px"
+                android:layout_height="52px"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="60px"
+                android:src="@mipmap/arrow_right" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View style="@style/split_line_gray_hor" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60px"
+                android:text="结佣周期："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="42px" />
+
+            <EditText
+                android:id="@+id/etCommissionCircle"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:inputType="number"
+                android:text="45"
+                android:textColor="@color/text_black"
+                android:textSize="42px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginRight="60px"
+                android:text="天"
+                android:textColor="@color/text_black"
+                android:textSize="42px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View style="@style/split_line_gray_hor" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:gravity="center_vertical">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60px"
+                android:text="项目分佣："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="42px" />
+
+            <EditText
+                android:id="@+id/etCommissionShare"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:inputType="number"
+                android:text="7"
+                android:textColor="@color/text_black"
+                android:textSize="42px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="60px"
+                android:text="%"
+                android:textColor="@color/text_black"
+                android:textSize="42px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View style="@style/split_line_gray_hor" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:gravity="center_vertical">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60px"
+                android:text="推荐客源："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="42px" />
+
+            <EditText
+                android:id="@+id/tvRecommendClient"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:inputType="number"
+                android:text="7"
+                android:textColor="@color/text_black"
+                android:textSize="42px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="60px"
+                android:text="%"
+                android:textColor="@color/text_black"
+                android:textSize="42px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View style="@style/split_line_gray_hor" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:gravity="center_vertical">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60px"
+                android:text="带客成交："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="42px" />
+
+            <EditText
+                android:id="@+id/etCarryClientDealed"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:inputType="number"
+                android:text="7"
+                android:textColor="@color/text_black"
+                android:textSize="42px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginRight="60px"
+                android:text="%"
+                android:textColor="@color/text_black"
+                android:textSize="42px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View style="@style/split_line_gray_hor" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60px"
+                android:text="客 源 奖 ："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="42px" />
+
+            <EditText
+                android:id="@+id/etClientSourceReword"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="454554"
+                android:inputType="number"
+                android:textColor="@color/text_gray_deep"
+                android:textColorHint="@color/edit_text_gray"
+                android:textSize="42px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="60px"
+                android:text="元"
+                android:textColor="@color/text_black"
+                android:textSize="42px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View style="@style/split_line_gray_hor" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60px"
+                android:text="带 客 奖 ："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="42px" />
+
+            <EditText
+                android:id="@+id/etCarryReword"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="454554"
+                android:inputType="number"
+                android:textColor="@color/text_gray_deep"
+                android:textColorHint="@color/edit_text_gray"
+                android:textSize="42px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginRight="60px"
+                android:text="元"
+                android:textColor="@color/text_black"
+                android:textSize="42px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+        <View style="@style/split_line_gray_hor" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60px"
+                android:text="现 金 奖 ："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="42px" />
+
+            <EditText
+                android:id="@+id/etCashReword"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="454554"
+                android:inputType="number"
+                android:textColor="@color/text_gray_deep"
+                android:textColorHint="@color/edit_text_gray"
+                android:textSize="42px" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginRight="60px"
+                android:text="元"
+                android:textColor="@color/text_black"
+                android:textSize="42px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View style="@style/split_line_gray_hor" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60px"
+                android:text="项目分润："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="42px" />
+
+            <EditText
+                android:id="@+id/etProjectShare"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="454554"
+                android:inputType="number"
+                android:textColor="@color/text_gray_deep"
+                android:textColorHint="@color/edit_text_gray"
+                android:textSize="42px" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="60px"
+                android:text="元"
+                android:textColor="@color/text_black"
+                android:textSize="42px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View style="@style/split_line_gray_hor" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60px"
+                android:text="渠道分润："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="42px" />
+
+            <EditText
+                android:id="@+id/etChannelShare"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="454554"
+                android:inputType="number"
+                android:textColor="@color/text_gray_deep"
+                android:textColorHint="@color/edit_text_gray"
+                android:textSize="42px" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginRight="60px"
+                android:text="元"
+                android:textColor="@color/text_black"
+                android:textSize="42px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View style="@style/split_line_gray_hor" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60px"
+                android:text="案场分润："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="42px" />
+
+            <EditText
+                android:id="@+id/etAnChangShare"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="454554"
+                android:inputType="number"
+                android:textColor="@color/text_gray_deep"
+                android:textColorHint="@color/edit_text_gray"
+                android:textSize="42px" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginRight="60px"
+                android:text="元"
+                android:textColor="@color/text_black"
+                android:textSize="42px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View style="@style/split_line_gray_hor" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60px"
+                android:text="营销费用："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="42px" />
+
+            <EditText
+                android:id="@+id/etMarketingCost"
+
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="454554"
+                android:inputType="number"
+                android:textColor="@color/text_gray_deep"
+                android:textColorHint="@color/edit_text_gray"
+                android:textSize="42px" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="60px"
+                android:text="元"
+                android:textColor="@color/text_black"
+                android:textSize="42px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View style="@style/split_line_gray_hor" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:background="@color/theme_gray"
+            android:gravity="center_vertical"
+            android:paddingLeft="60px"
+            android:text="优惠信息"
+            android:textColor="@color/text_gray_deep"
+            android:textSize="42px" />
+
+
+        <View style="@style/split_line_gray_hor" />
+
+
+        <EditText
+            android:id="@+id/etDiscountMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="42px"
+            android:layout_marginLeft="60px"
+            android:layout_marginRight="60px"
+            android:layout_marginTop="42px"
+            android:background="@null"
+            android:text="11111111111111111111111111111111111111111111111111111111111111111111111111111111111"
+            android:textColor="@color/text_gray_deep"
+            android:textSize="36px" />
+
+
+        <View style="@style/split_line_gray_hor" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:background="@color/theme_gray"
+            android:gravity="center_vertical"
+            android:paddingLeft="60px"
+            android:text="楼盘卖点"
+            android:textColor="@color/text_gray_deep"
+            android:textSize="42px" />
+
+
+        <View style="@style/split_line_gray_hor" />
+
+
+        <EditText
+            android:id="@+id/etSalePoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="42px"
+            android:layout_marginLeft="60px"
+            android:layout_marginRight="60px"
+            android:layout_marginTop="42px"
+            android:background="@null"
+            android:text="11111111111111111111111111111111111111111111111111111111111111111111111111111111111"
+            android:textColor="@color/text_gray_deep"
+            android:textSize="36px" />
+
+
+        <View style="@style/split_line_gray_hor" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:background="@color/theme_gray"
+            android:gravity="center_vertical"
+            android:paddingLeft="60px"
+            android:text="目标客户"
+            android:textColor="@color/text_gray_deep"
+            android:textSize="42px" />
+
+
+        <View style="@style/split_line_gray_hor" />
+
+
+        <EditText
+            android:id="@+id/etIntentClient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="42px"
+            android:layout_marginLeft="60px"
+            android:layout_marginRight="60px"
+            android:layout_marginTop="42px"
+            android:background="@null"
+            android:text="11111111111111111111111111111111111111111111111111111111111111111111111111111111111"
+            android:textColor="@color/text_gray_deep"
+            android:textSize="36px" />
+
+
+        <View style="@style/split_line_gray_hor" />
+
+
+        <TextView
+
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:background="@color/theme_gray"
+            android:gravity="center_vertical"
+
+            android:paddingLeft="60px"
+            android:text="拓客技巧"
+            android:textColor="@color/text_gray_deep"
+            android:textSize="42px" />
+
+
+        <View style="@style/split_line_gray_hor" />
+
+
+        <EditText
+            android:id="@+id/etFindClientSkill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="42px"
+            android:layout_marginLeft="60px"
+            android:layout_marginRight="60px"
+            android:layout_marginTop="42px"
+            android:background="@null"
+            android:text="11111111111111111111111111111111111111111111111111111111111111111111111111111111111"
+            android:textColor="@color/text_gray_deep"
+            android:textSize="36px" />
+
+
+        <View style="@style/split_line_gray_hor" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:background="@color/theme_gray"
+            android:gravity="center_vertical"
+            android:paddingLeft="60px"
+            android:text="备注信息"
+            android:textColor="@color/text_gray_deep"
+            android:textSize="42px" />
+
+
+        <View style="@style/split_line_gray_hor" />
+
+
+        <EditText
+            android:id="@+id/etMarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="42px"
+            android:layout_marginLeft="60px"
+            android:layout_marginRight="60px"
+            android:layout_marginTop="42px"
+            android:background="@null"
+            android:text="11111111111111111111111111111111111111111111111111111111111111111111111111111111111"
+            android:textColor="@color/text_gray_deep"
+            android:textSize="36px" />
+
+
+        <View style="@style/split_line_gray_hor" />
+
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="960px"
+            android:layout_height="135px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="50px"
+            android:layout_marginTop="50px"
+            android:background="@drawable/shape_btn_round_app_color"
+            android:text="确认提交"
+            android:textColor="@color/text_white"
+            android:textSize="42px" />
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</ScrollView>

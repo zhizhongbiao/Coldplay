@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTips"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:gravity="center"
+        android:paddingLeft="61px"
+        android:text="请输入新的支付密码"
+        android:textColor="#666666"
+        android:textSize="42px" />
+
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="@color/bgWhite">
+
+        <cn.com.tianyudg.android_agent.base.basic.widget.input.PayPsdInputView
+            android:id="@+id/etNewPayPsw"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:gravity="center_vertical"
+            android:inputType="numberPassword"
+            android:textColor="#333333"
+            android:textSize="42px" />
+    </com.zhy.autolayout.AutoFrameLayout>
+
+
+    <TextView
+        android:id="@+id/tvTipsII"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:gravity="center"
+        android:paddingLeft="61px"
+        android:text="请再次输入新的支付密码"
+        android:visibility="gone"
+        android:textColor="#666666"
+        android:textSize="42px" />
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="@color/bgWhite">
+
+        <cn.com.tianyudg.android_agent.base.basic.widget.input.PayPsdInputView
+            android:id="@+id/etNewPayPswAgain"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:inputType="numberPassword"
+            android:textColor="#333333"
+            android:textSize="42px" />
+    </com.zhy.autolayout.AutoFrameLayout>
+
+
+    <Button
+        android:id="@+id/btnEnsure"
+        android:layout_width="960px"
+        android:layout_height="135px"
+        android:layout_marginTop="61px"
+        android:background="@drawable/selector_button_bg"
+        android:enabled="false"
+        android:text="确定"
+        android:textColor="#FFF"
+        android:textSize="42px" />
+
+
+</LinearLayout>

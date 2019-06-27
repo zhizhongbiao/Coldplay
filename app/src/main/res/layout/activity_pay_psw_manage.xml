@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/bgColor"
+    android:layout_height="match_parent">
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/rlResetPayPsw"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_marginTop="2px"
+        android:background="#ffffff">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="58px"
+
+            android:text="修改支付密码"
+            android:textColor="#333333"
+            android:textSize="42px" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20px"
+            android:layout_toLeftOf="@+id/ivLoginPsw"
+            android:text="去修改"
+            android:textColor="@color/textMinor"
+            android:textSize="42px" />
+
+        <ImageView
+            android:id="@+id/ivLoginPsw"
+            android:layout_width="42px"
+            android:layout_height="42px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="59px"
+            android:background="@mipmap/arrow_right" />
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/rlFindBackPayPsw"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_marginTop="2px"
+        android:background="#ffffff">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="58px"
+
+            android:text="找回支付密码"
+            android:textColor="#333333"
+            android:textSize="42px" />
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20px"
+            android:layout_toLeftOf="@+id/ivPayPsw"
+            android:text="去找回"
+            android:textColor="@color/textMinor"
+            android:textSize="42px" />
+
+        <ImageView
+            android:id="@+id/ivPayPsw"
+            android:layout_width="42px"
+            android:layout_height="42px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="59px"
+            android:background="@mipmap/arrow_right" />
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+
+
+
+
+</LinearLayout>

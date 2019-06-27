@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bgWhite"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="250px"
+       android:gravity="center"
+        android:id="@+id/tvTips"
+        android:text="支付密码不正确"
+        android:textColor="@color/textMain"
+        android:textSize="65px" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/bgGray"
+        />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="130px">
+
+        <TextView
+            android:id="@+id/tvRetry"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="重试"
+            android:textColor="@color/textMain"
+            android:textSize="42px" />
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="match_parent"
+            android:background="@color/bgGray"
+            />
+
+        <TextView
+            android:id="@+id/tvForgetPsw"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="忘记密码"
+            android:textColor="@color/appColor"
+            android:textSize="42px" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

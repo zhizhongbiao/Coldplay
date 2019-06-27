@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="108px"
+    android:layout_marginTop="2px"
+    android:background="#FFF"
+    android:orientation="horizontal">
+
+
+
+    <TextView
+        android:id="@+id/tvAgent"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.9"
+        android:gravity="center"
+        android:text="中介简称"
+        android:textColor="#666666"
+        android:textSize="36px" />
+
+    <include layout="@layout/vertical_split_line" />
+
+
+    <TextView
+        android:id="@+id/tvContact"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8"
+        android:gravity="center"
+        android:text="联系人"
+        android:textColor="#666666"
+        android:textSize="36px" />
+
+    <include layout="@layout/vertical_split_line" />
+
+    <TextView
+        android:id="@+id/tvPhone"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.2"
+        android:gravity="center"
+        android:text="手机号"
+        android:textColor="#666666"
+        android:textSize="36px" />
+
+    <include layout="@layout/vertical_split_line" />
+
+    <TextView
+        android:id="@+id/tvCommission"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.9"
+        android:gravity="center"
+        android:text="累计分润"
+        android:textColor="#666666"
+        android:textSize="36px" />
+
+
+</LinearLayout>

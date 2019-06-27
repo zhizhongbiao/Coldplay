@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        android:background="@mipmap/withdraw_bg">
+
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="60px"
+            android:layout_height="45px"
+            android:layout_marginLeft="77px"
+            android:layout_marginTop="60px"
+            android:src="@mipmap/bank_card" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv"
+            android:layout_marginLeft="10px"
+            android:layout_toRightOf="@+id/iv"
+            android:text="累积提现"
+            android:textColor="@color/textWhite"
+            android:textSize="45px" />
+
+        <TextView
+            android:id="@+id/tvTotalWithdraw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/iv"
+            android:layout_below="@+id/iv"
+            android:layout_marginLeft="10px"
+            android:layout_marginTop="20px"
+            android:text="00.00"
+            android:textColor="@color/textWhite"
+            android:textSize="100px" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    <include layout="@layout/layout_common_recyclerview" />
+
+</LinearLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2px"
+    android:background="#ffffff">
+
+
+    <ImageView
+        android:id="@+id/ivEstate"
+        android:layout_width="360px"
+        android:layout_height="240px"
+        android:layout_margin="30px"
+        android:src="@mipmap/place_holder" />
+
+    <TextView
+        android:id="@+id/tvEstateName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:layout_toRightOf="@+id/ivEstate"
+        android:text="楼盘名字"
+        android:textColor="#333333"
+        android:textSize="42px" />
+
+    <TextView
+        android:id="@+id/tvEstateType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvEstateName"
+        android:layout_marginTop="20px"
+        android:layout_toRightOf="@+id/ivEstate"
+        android:text="洋楼"
+        android:textColor="#98cb22"
+        android:textSize="36px" />
+
+    <View
+        android:layout_width="2px"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/tvEstateType"
+        android:layout_alignTop="@+id/tvEstateType"
+        android:layout_marginLeft="23px"
+        android:layout_toRightOf="@+id/tvEstateType"
+        android:background="@color/bgColor" />
+
+
+    <TextView
+        android:id="@+id/tvEstateLocate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvEstateType"
+        android:layout_alignTop="@+id/tvEstateType"
+        android:layout_marginLeft="48px"
+        android:layout_toRightOf="@+id/tvEstateType"
+        android:text="南城"
+        android:textColor="#999999"
+        android:textSize="36px" />
+
+
+    <View
+        android:layout_width="2px"
+        android:layout_alignTop="@+id/tvEstateLocate"
+        android:layout_alignBottom="@+id/tvEstateLocate"
+        android:layout_toRightOf="@+id/tvEstateLocate"
+        android:layout_marginLeft="23px"
+        android:background="@color/bgColor"
+        android:layout_height="match_parent"/>
+
+
+
+
+    <TextView
+        android:id="@+id/tvAveragePrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvEstateType"
+        android:layout_marginTop="20px"
+        android:layout_toRightOf="@+id/ivEstate"
+        android:text="平均售价:"
+        android:textColor="#999999"
+        android:textSize="36px" />
+
+
+    <TextView
+        android:id="@+id/tvAverageSalePrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvAveragePrice"
+        android:layout_alignTop="@+id/tvAveragePrice"
+        android:layout_marginLeft="25px"
+        android:layout_toRightOf="@+id/tvAveragePrice"
+        android:text="20000"
+        android:textColor="@color/appColor"
+        android:textSize="36px" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBottom="@+id/tvAverageSalePrice"
+        android:layout_alignTop="@+id/tvAverageSalePrice"
+        android:layout_toRightOf="@+id/tvAverageSalePrice"
+        android:text="元/㎡"
+        android:visibility="gone"
+        android:textColor="#999999"
+        android:textSize="36px" />
+
+    <TextView
+        android:id="@+id/tvSalePriceRange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAveragePrice"
+        android:layout_marginTop="20px"
+        android:layout_toRightOf="@+id/ivEstate"
+        android:text="售价范围:"
+        android:textColor="#999999"
+        android:textSize="36px" />
+
+    <TextView
+        android:id="@+id/tvSalePriceRangeCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvSalePriceRange"
+        android:layout_alignTop="@+id/tvSalePriceRange"
+        android:layout_marginLeft="25px"
+        android:layout_toRightOf="@+id/tvSalePriceRange"
+        android:text="555356"
+        android:textColor="@color/appColor"
+        android:textSize="36px" />
+
+    <TextView
+        android:id="@+id/tvSalePriceRangeUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvSalePriceRangeCount"
+        android:layout_alignTop="@+id/tvSalePriceRangeCount"
+        android:layout_toRightOf="@+id/tvSalePriceRangeCount"
+        android:text="万"
+        android:textColor="@color/appColor"
+        android:textSize="36px" />
+
+
+
+
+</RelativeLayout>

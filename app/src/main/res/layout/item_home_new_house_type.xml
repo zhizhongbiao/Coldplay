@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1px"
+        android:background="#ffffff">
+
+
+        <ImageView
+            android:id="@+id/ivHouseType"
+            android:layout_width="360px"
+            android:layout_height="240px"
+            android:layout_margin="30px"
+            android:src="@mipmap/place_holder" />
+
+        <TextView
+            android:id="@+id/tvHouseType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:layout_toRightOf="@+id/ivHouseType"
+            android:text="两房一厅"
+            android:textColor="#333333"
+            android:textSize="42px" />
+
+
+
+
+        <TextView
+            android:id="@+id/tvArea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvHouseType"
+            android:layout_marginTop="40px"
+            android:layout_toRightOf="@+id/ivHouseType"
+            android:text="面积 : 45平方"
+            android:textColor="#666666"
+            android:textSize="36px" />
+
+
+
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvArea"
+            android:layout_alignTop="@+id/tvArea"
+            android:layout_marginLeft="48px"
+            android:layout_toRightOf="@+id/tvArea"
+            android:text="均价 : "
+            android:textColor="#666666"
+            android:textSize="36px" />
+
+        <TextView
+            android:id="@+id/tvAveragePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv"
+            android:layout_alignTop="@+id/tv"
+            android:layout_toRightOf="@+id/tv"
+            android:text="100000元/㎡"
+            android:textColor="@color/appColor"
+            android:textSize="36px" />
+
+
+        <TextView
+            android:id="@+id/tvCarryClientDealed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvArea"
+            android:layout_marginTop="40px"
+            android:layout_toRightOf="@+id/ivHouseType"
+            android:text="带客成交:"
+            android:textColor="#666666"
+            android:textSize="36px" />
+
+
+        <TextView
+            android:id="@+id/tvCarryClientDealedPercent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvCarryClientDealed"
+            android:layout_alignTop="@+id/tvCarryClientDealed"
+            android:layout_marginLeft="25px"
+            android:layout_toRightOf="@+id/tvCarryClientDealed"
+            android:text="3%"
+            android:textColor="@color/appColor"
+            android:textSize="36px" />
+
+
+
+
+      
+
+
+
+
+    </RelativeLayout>
+

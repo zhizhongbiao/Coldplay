@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgGray"
+    android:orientation="vertical">
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+
+        android:layout_marginTop="30px"
+        android:background="@color/bgWhite"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60px"
+            android:text="银行卡号："
+            android:textColor="@color/text_gray_deep"
+            android:textSize="42px" />
+
+        <EditText
+            android:id="@+id/etCardNum"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center_vertical|end"
+            android:hint="输入银行卡卡号"
+            android:inputType="number"
+            android:maxLines="1"
+            android:paddingRight="60px"
+            android:textColorHint="@color/edit_text_gray"
+            android:textSize="42px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_marginTop="2px"
+        android:background="@color/bgWhite"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60px"
+            android:text="持 卡 人 ："
+            android:textColor="@color/text_gray_deep"
+            android:textSize="42px" />
+
+        <EditText
+            android:id="@+id/etHost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center_vertical|end"
+            android:hint="输入持卡人姓名"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingRight="60px"
+            android:textColorHint="@color/edit_text_gray"
+            android:textSize="42px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_marginTop="2px"
+        android:background="@color/bgWhite"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60px"
+            android:text="身份证号："
+            android:textColor="@color/text_gray_deep"
+            android:textSize="42px" />
+
+        <EditText
+            android:id="@+id/etMSMCode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center_vertical|end"
+            android:hint="输入短信验证码"
+            android:inputType="number"
+            android:paddingRight="60px"
+            android:textColorHint="@color/edit_text_gray"
+            android:textSize="42px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_marginTop="2px"
+        android:background="@color/bgWhite"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60px"
+            android:text="预留手机："
+            android:textColor="@color/text_gray_deep"
+            android:textSize="42px" />
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical|end"
+            android:hint="银行预留手机号码"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:paddingRight="60px"
+            android:textColorHint="@color/edit_text_gray"
+            android:textSize="42px"
+
+            />
+
+
+        <Button
+
+            android:layout_width="270px"
+            android:layout_height="90px"
+            android:layout_marginLeft="60px"
+            android:layout_marginRight="60px"
+            android:background="@drawable/shape_btn_round_app_color"
+            android:gravity="center"
+            android:text="获取验证码"
+
+            android:textColor="@color/text_white"
+            android:textSize="42px"
+            android:visibility="gone" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_marginTop="2px"
+        android:background="@color/bgWhite"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60px"
+            android:text="验证码："
+            android:textColor="@color/text_gray_deep"
+            android:textSize="42px" />
+
+        <EditText
+            android:id="@+id/etVerifyCode"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical|end"
+            android:hint="请输入短信验证码"
+            android:maxLength="4"
+            android:inputType="number"
+            android:paddingRight="60px"
+            android:textColorHint="@color/edit_text_gray"
+            android:textSize="42px"
+
+            />
+
+        <ImageView
+            android:id="@+id/ivClear"
+            android:layout_width="60px"
+            android:layout_height="match_parent"
+            android:layout_marginRight="30px"
+            android:paddingBottom="45px"
+            android:paddingTop="45px"
+            android:src="@mipmap/clear" />
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="match_parent"
+            android:background="@color/bgGray" />
+
+        <Button
+            android:id="@+id/btnGetMSMCode"
+            android:layout_width="250px"
+            android:layout_height="103px"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:background="@drawable/shape_btn_round_app_color"
+            android:gravity="center"
+            android:text="获取验证码"
+
+            android:textColor="@color/text_white"
+            android:textSize="42px" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <View style="@style/split_line_gray_hor" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="990px"
+        android:layout_height="120px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="90px"
+        android:background="@drawable/shape_btn_round_app_color"
+        android:text="添加银行卡"
+        android:textColor="@color/text_white"
+        android:textSize="45px" />
+
+</LinearLayout>

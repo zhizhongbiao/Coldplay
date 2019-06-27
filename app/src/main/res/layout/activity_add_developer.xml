@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgGray"
+    android:orientation="vertical">
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:background="@color/bgWhite"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60px"
+            android:text="公司全称："
+            android:textColor="@color/text_gray_deep"
+            android:textSize="42px" />
+
+        <EditText
+            android:id="@+id/etCompanyFullName"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical|end"
+            android:hint="请输入公司全称"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingRight="50px"
+            android:textColor="@color/textMain"
+            android:textColorHint="@color/edit_text_gray"
+            android:textSize="42px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View style="@style/split_line_gray_hor" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:background="@color/bgWhite"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60px"
+            android:text="公司简称："
+            android:textColor="@color/text_gray_deep"
+            android:textSize="42px" />
+
+        <EditText
+            android:id="@+id/etCompanyShortName"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical|end"
+            android:hint="请输入小于等于6个字符的公司简称"
+            android:inputType="text"
+            android:maxLength="6"
+            android:paddingRight="50px"
+            android:textColor="@color/textMain"
+            android:textColorHint="@color/edit_text_gray"
+            android:textSize="42px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <View style="@style/split_line_gray_hor" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:background="@color/bgWhite"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60px"
+            android:text="联  系 人 ："
+            android:textColor="@color/text_gray_deep"
+            android:textSize="42px" />
+
+        <EditText
+            android:id="@+id/etContact"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical|end"
+            android:hint="请输入联系人名称"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingRight="50px"
+            android:textColor="@color/textMain"
+
+            android:textColorHint="@color/edit_text_gray"
+            android:textSize="42px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <View style="@style/split_line_gray_hor" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:background="@color/bgWhite"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60px"
+            android:text="联系电话："
+            android:textColor="@color/text_gray_deep"
+            android:textSize="42px" />
+
+        <EditText
+            android:id="@+id/etContactPhone"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical|end"
+            android:hint="请输入联系人电话"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:paddingRight="50px"
+            android:textColor="@color/textMain"
+            android:textColorHint="@color/edit_text_gray"
+            android:textSize="42px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View style="@style/split_line_gray_hor" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:background="@color/bgWhite"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60px"
+            android:text="密        码 : "
+            android:textColor="@color/text_gray_deep"
+            android:textSize="42px" />
+
+        <EditText
+            android:id="@+id/etPsw"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical|end"
+            android:hint="请输入6-16个字符密码"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:paddingRight="50px"
+            android:textColor="@color/textMain"
+            android:textColorHint="@color/edit_text_gray"
+            android:textSize="42px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View style="@style/split_line_gray_hor" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:background="@color/bgWhite"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60px"
+            android:text="确认密码 : "
+            android:textColor="@color/text_gray_deep"
+            android:textSize="42px" />
+
+        <EditText
+            android:id="@+id/etPswAgain"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical|end"
+
+            android:hint="请确认密码"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:paddingRight="50px"
+            android:textColor="@color/textMain"
+            android:textColorHint="@color/edit_text_gray"
+            android:textSize="42px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View style="@style/split_line_gray_hor" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/llShare"
+        android:layout_height="150px"
+        android:background="@color/bgWhite"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60px"
+            android:text="分润比例 : "
+            android:textColor="@color/text_gray_deep"
+            android:textSize="42px" />
+
+        <EditText
+            android:id="@+id/etShare"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical|end"
+            android:hint="请输入您给下级设定的分润0-70比例"
+            android:inputType="numberDecimal"
+            android:maxLength="5"
+            android:paddingRight="15px"
+            android:textColor="@color/textMain"
+            android:textColorHint="@color/edit_text_gray"
+            android:textSize="42px" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30px"
+            android:text="%"
+            android:textColor="@color/text_gray_deep"
+            android:textSize="42px" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:layout_margin="60px"
+        android:background="@drawable/shape_btn_round_app_color"
+        android:text="确认添加"
+        android:textColor="@color/bgWhite"
+        android:textSize="45px" />
+
+
+</LinearLayout>

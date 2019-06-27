@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="279px"
+        android:layout_height="258px"
+        android:layout_marginTop="150px"
+        android:src="@mipmap/logo" />
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_marginLeft="60px"
+        android:layout_marginRight="60px"
+        android:layout_marginTop="120px"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="66px"
+            android:layout_height="66px"
+            android:layout_marginLeft="60px"
+            android:src="@mipmap/phone_login"
+            app:layout_auto_basewidth="height" />
+
+
+        <EditText
+            android:id="@+id/etLoginPhone"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50px"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:maxLength="11"
+            android:layout_marginRight="30px"
+            android:gravity="center_vertical"
+            android:hint="请输入手机号码"
+            android:inputType="phone"
+            android:textColor="#000"
+            android:textColorHint="#cccccc"
+            android:textSize="50px" />
+
+
+        <ImageView
+            android:id="@+id/ivAccountClear"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:background="@mipmap/clear"
+            app:layout_auto_basewidth="height" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginLeft="60px"
+        android:layout_marginRight="60px"
+        android:background="@color/bgColor" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_marginLeft="60px"
+        android:layout_marginRight="60px"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="66px"
+            android:layout_height="66px"
+            android:layout_marginLeft="60px"
+            android:src="@mipmap/lock"
+            app:layout_auto_basewidth="height" />
+
+
+        <EditText
+            android:id="@+id/etLoginPsw"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50px"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:maxLength="16"
+            android:gravity="center_vertical"
+            android:hint="请输入密码"
+            android:layout_marginRight="30px"
+            android:inputType="textPassword"
+            android:textColor="#000"
+            android:textColorHint="#cccccc"
+            android:textSize="50px" />
+
+
+        <ImageView
+            android:id="@+id/ivPswClear"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:background="@mipmap/clear"
+            app:layout_auto_basewidth="height" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="960px"
+        android:layout_height="140px"
+        android:layout_marginTop="61px"
+        android:background="@drawable/shape_btn_round_app_color"
+        android:text="登录"
+        android:textColor="#FFF"
+        android:textSize="48px" />
+
+
+    <TextView
+        android:id="@+id/tvForgetPsw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:paddingBottom="30px"
+        android:paddingRight="70px"
+        android:paddingTop="30px"
+        android:text="忘记密码?"
+        android:textColor="@color/appColor"
+        android:textSize="42px" />
+
+
+</LinearLayout>

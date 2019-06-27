@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.com.tianyudg.android_agent.base.basic.widget.refresh.RefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/refreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    app:pullMaxHeight="100dp"
+    app:pullViewHeight="80dp">
+
+
+    <android.support.v4.widget.NestedScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bgGray"
+            android:orientation="vertical">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bgWhite"
+                android:orientation="vertical">
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150px"
+
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tvProxyName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="62px"
+                        android:text="汇房合伙人"
+                        android:textColor="@color/textBlack"
+                        android:textSize="50px" />
+
+                    <TextView
+                        android:id="@+id/tvProxyLevel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="62px"
+                        android:text="一级代理"
+                        android:textColor="@color/textMinor"
+                        android:textSize="36px" />
+
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="60px"
+                    android:layout_marginLeft="45px"
+                    android:layout_marginRight="45px"
+                    app:cardCornerRadius="5px"
+                    app:cardElevation="20dp">
+
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <cn.com.tianyudg.android_agent.base.basic.widget.statistics.CircleView
+                            android:id="@+id/cv"
+                            android:layout_width="40px"
+                            android:layout_height="40px"
+                            android:layout_marginLeft="90px"
+                            android:layout_marginTop="75px"
+                            app:circle_color="@color/bgBlack" />
+
+                        <TextView
+                            android:id="@+id/thisMonth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20px"
+                            android:layout_marginTop="70px"
+                            android:layout_toRightOf="@+id/cv"
+                            android:text="本月业绩"
+                            android:textColor="@color/textMain"
+                            android:textSize="42px" />
+
+
+                        <TextView
+                            android:id="@+id/tvThisMonthShare"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/thisMonth"
+                            android:layout_below="@+id/thisMonth"
+                            android:layout_marginBottom="60px"
+                            android:layout_marginTop="30px"
+                            android:text="00.00"
+                            android:textColor="@color/textMain"
+                            android:textSize="50px" />
+
+
+                        <cn.com.tianyudg.android_agent.base.basic.widget.statistics.CircleView
+                            android:id="@+id/cv2"
+                            android:layout_width="40px"
+                            android:layout_height="40px"
+                            android:layout_marginLeft="550px"
+                            android:layout_marginTop="75px"
+                            app:circle_color="@color/bgBlack" />
+
+                        <TextView
+                            android:id="@+id/tvTotal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20px"
+                            android:layout_marginTop="70px"
+                            android:layout_toRightOf="@+id/cv2"
+                            android:text="累积业绩"
+                            android:textColor="@color/textMain"
+                            android:textSize="42px" />
+
+                        <TextView
+                            android:id="@+id/tvAccumulateShare"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/tvTotal"
+                            android:layout_below="@+id/tvTotal"
+                            android:layout_marginBottom="60px"
+                            android:layout_marginTop="30px"
+                            android:text="00.00"
+                            android:textColor="@color/textMain"
+                            android:textSize="50px" />
+
+
+                    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="140px"
+                android:layout_marginTop="30px"
+                android:background="@color/bgWhite"
+                android:gravity="center_vertical"
+                android:paddingLeft="52px"
+                android:text="占比统计"
+                android:textColor="@color/textMain"
+                android:textSize="50px" />
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="360px"
+                android:layout_marginTop="2px"
+                android:background="@color/bgWhite"
+                android:orientation="horizontal">
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0px"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical">
+
+                        <cn.com.tianyudg.android_agent.base.basic.widget.statistics.CircleView
+
+                            android:layout_width="40px"
+                            android:layout_height="40px"
+                            android:layout_marginLeft="40px"
+                            app:circle_color="#00cc99" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20px"
+                            android:text="渠道"
+                            android:textColor="@color/textMain"
+                            android:textSize="42px" />
+
+
+                        <View
+                            android:layout_width="0px"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+
+                        <TextView
+                            android:id="@+id/tvAgentMoneyCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="40px"
+                            android:text="00.00"
+                            android:textColor="#00cc99"
+                            android:textSize="42px" />
+
+                        <TextView
+                            android:id="@+id/tvAgentShare"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="40px"
+                            android:text="0%"
+                            android:textColor="#00cc99"
+                            android:textSize="42px" />
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0px"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical">
+
+                        <cn.com.tianyudg.android_agent.base.basic.widget.statistics.CircleView
+
+                            android:layout_width="40px"
+                            android:layout_height="40px"
+                            android:layout_marginLeft="40px"
+                            app:circle_color="#4385f5" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20px"
+                            android:text="速卖通"
+                            android:textColor="@color/textMain"
+                            android:textSize="42px" />
+
+
+                        <View
+                            android:layout_width="0px"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+
+                        <TextView
+                            android:id="@+id/tvDeveloperMoneyCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="40px"
+                            android:text="00.00"
+                            android:textColor="#4385f5"
+                            android:textSize="42px" />
+
+                        <TextView
+                            android:id="@+id/tvDeveloperShare"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="40px"
+                            android:text="0%"
+                            android:textColor="#4385f5"
+                            android:textSize="42px" />
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+
+                <cn.com.tianyudg.android_agent.base.basic.widget.statistics.CircleShareView
+                    android:id="@+id/csv"
+                    android:layout_width="280px"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="40px" />
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/rlStatisticsList"
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:layout_marginBottom="30px"
+                android:layout_marginTop="30px"
+                android:background="#ffffff">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="52px"
+                    android:text="统计列表"
+                    android:textColor="#333333"
+                    android:textSize="50px" />
+
+                <ImageView
+                    android:layout_width="42px"
+                    android:layout_height="42px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="59px"
+                    android:background="@mipmap/arrow_right" />
+
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</cn.com.tianyudg.android_agent.base.basic.widget.refresh.RefreshLayout>

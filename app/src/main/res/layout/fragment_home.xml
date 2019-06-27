@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:orientation="vertical">
+
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="144px"
+        android:background="@color/bgBlack">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="云相册"
+            android:layout_gravity="center"
+            android:textColor="@color/bgWhite"
+            android:textSize="42px"
+            />
+
+
+        <ImageView
+            android:id="@+id/ivSearch"
+            android:layout_width="138px"
+            android:layout_height="match_parent"
+            android:paddingBottom="43px"
+            android:paddingLeft="40px"
+            android:paddingRight="40px"
+            android:layout_gravity="center_vertical|right"
+            android:paddingTop="43px"
+            android:src="@mipmap/search2" />
+
+    </com.zhy.autolayout.AutoFrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/bgGray" />
+
+
+    <com.waterflower.coldplay.waterflower.basic.widget.refresh.RefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:pullMaxHeight="100dp"
+        app:pullViewHeight="80dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.waterflower.coldplay.waterflower.basic.widget.refresh.RefreshLayout>
+
+</LinearLayout>

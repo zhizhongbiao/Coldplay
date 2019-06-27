@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="350px"
+    android:layout_marginLeft="30px"
+    android:layout_marginRight="30px"
+    android:layout_marginTop="10px"
+    android:background="@mipmap/item_bg"
+    app:cardCornerRadius="10px"
+    app:cardElevation="20dp">
+
+
+    <TextView
+        android:id="@+id/tvEstateName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70px"
+        android:layout_marginTop="30px"
+        android:text="万科物业"
+        android:textColor="@color/textMain"
+        android:textSize="54px" />
+
+
+    <TextView
+        android:id="@+id/tvAgentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvEstateName"
+        android:layout_marginRight="10px"
+        android:layout_toLeftOf="@+id/tvAgentPhone"
+        android:text="李白"
+        android:textColor="@color/textMain"
+        android:textSize="40px" />
+
+
+    <TextView
+        android:id="@+id/tvAgentPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvEstateName"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50px"
+        android:text="(1556565665)"
+        android:textColor="@color/textMinor"
+        android:textSize="40px" />
+
+    <TextView
+        android:id="@+id/tvCommission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40px"
+        android:layout_marginLeft="70px"
+        android:text="累积分润"
+        android:textColor="@color/textMinor"
+        android:textSize="40px" />
+
+    <TextView
+        android:id="@+id/tvAccumulateMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvCommission"
+        android:layout_marginBottom="10px"
+        android:layout_marginLeft="70px"
+        android:text="15000000000"
+        android:textColor="#ff850b"
+        android:textSize="54px" />
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="40px"
+        android:layout_marginRight="50px"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvEstateCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="23个"
+            android:textColor="@color/textMain"
+            android:textSize="40px" />
+
+        <TextView
+            android:id="@+id/tvEstate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="楼盘"
+            android:textColor="@color/textMain"
+            android:textSize="40px" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

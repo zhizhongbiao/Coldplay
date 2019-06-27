@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/emptyView"
+    android:background="@color/bgColor"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/blank_pic"
+        app:layout_auto_basewidth="height" />
+
+
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60px"
+        android:text="抱歉,未获取到相关符合条件的数据 ! 请下拉刷新试试"
+        android:textColor="@color/appColor"
+        android:textSize="42px" />
+
+
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/rlLoginPsw"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_marginTop="61px"
+        android:background="#ffffff">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="58px"
+
+            android:text="登录密码"
+            android:textColor="#333333"
+            android:textSize="42px" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20px"
+            android:layout_toLeftOf="@+id/ivLoginPsw"
+            android:text="去修改"
+            android:textColor="@color/textMinor"
+            android:textSize="42px" />
+
+        <ImageView
+            android:id="@+id/ivLoginPsw"
+            android:layout_width="42px"
+            android:layout_height="42px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="59px"
+            android:background="@mipmap/arrow_right" />
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/rlPayPsw"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_marginTop="2px"
+        android:background="#ffffff">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="58px"
+
+            android:text="支付密码"
+            android:textColor="#333333"
+            android:textSize="42px" />
+
+
+        <TextView
+            android:id="@+id/tvPayPswState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20px"
+            android:layout_toLeftOf="@+id/ivPayPsw"
+            android:text="去设置"
+            android:textColor="@color/textMinor"
+            android:textSize="42px" />
+
+        <ImageView
+            android:id="@+id/ivPayPsw"
+            android:layout_width="42px"
+            android:layout_height="42px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="59px"
+            android:background="@mipmap/arrow_right" />
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/rlVersionUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_marginTop="32px"
+        android:background="#ffffff">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="58px"
+
+            android:text="版本号"
+            android:textColor="#333333"
+            android:textSize="42px" />
+
+        <TextView
+            android:id="@+id/tvVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="59px"
+            android:text="Ver 1.10" />
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="960px"
+        android:layout_height="130px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="61px"
+        android:background="@drawable/shape_btn_round_app_color"
+        android:text="退出登录"
+        android:textColor="#FFF"
+        android:textSize="50px" />
+
+
+</LinearLayout>

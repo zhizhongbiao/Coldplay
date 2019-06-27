@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="30px"
+    android:layout_marginRight="30px"
+    android:layout_marginTop="30px"
+    android:background="@drawable/shape_bank_card_bg">
+
+
+    <ImageView
+        android:id="@+id/ivBank"
+        android:layout_width="120px"
+        android:layout_height="120px"
+        android:padding="10px"
+        android:layout_marginLeft="75px"
+        android:layout_marginTop="30px"
+        android:background="@mipmap/bank_card_bg"
+        />
+
+
+    <TextView
+        android:id="@+id/tvBank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="42px"
+        android:layout_marginTop="45px"
+        android:layout_toRightOf="@+id/ivBank"
+
+        android:text="中国银行"
+        android:textColor="#FFF"
+        android:textSize="48px" />
+
+    <TextView
+        android:id="@+id/tvBankCardType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvBank"
+        android:layout_below="@+id/tvBank"
+        android:layout_marginTop="5px"
+        android:text="储蓄卡"
+        android:textColor="#FFF"
+        android:textSize="39px" />
+
+
+
+    <TextView
+        android:id="@+id/tvBankCardNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvBank"
+        android:layout_below="@+id/tvBankCardType"
+        android:layout_marginTop="30px"
+        android:layout_marginBottom="30px"
+        android:text="****  ****  ****  2356"
+        android:layout_marginRight="140px"
+        android:maxLines="1"
+        android:ellipsize="start"
+        android:textColor="#FFF"
+        android:textSize="60px" />
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

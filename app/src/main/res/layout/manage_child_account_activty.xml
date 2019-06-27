@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_gray">
+
+    <com.zhy.autolayout.AutoLinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_marginTop="3px"
+        android:background="@color/bgWhite"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:gravity="center_vertical"
+            android:paddingLeft="61px"
+            android:text="账号名称 :"
+            android:textColor="@color/textMain"
+            android:textSize="42px" />
+
+
+        <EditText
+            android:layout_width="0px"
+            android:layout_height="150px"
+            android:layout_weight="1"
+            android:background="@color/bgWhite"
+            android:gravity="center_vertical|end"
+            android:hint="6-16个字符,区分大小字母"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:paddingRight="75px"
+            android:textColor="#333333"
+            android:textColorHint="#cccccc"
+            android:textSize="42px" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_marginTop="3px"
+        android:background="@color/bgWhite"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:gravity="center_vertical"
+            android:paddingLeft="61px"
+            android:text="手机号码 :"
+            android:textColor="@color/textMain"
+            android:textSize="42px" />
+
+
+        <EditText
+            android:layout_width="0px"
+            android:layout_height="150px"
+            android:layout_weight="1"
+            android:background="@color/bgWhite"
+            android:gravity="center_vertical|end"
+            android:hint="6-16个字符,区分大小字母"
+            android:inputType="phone"
+            android:maxLength="16"
+            android:paddingRight="75px"
+            android:textColor="#333333"
+            android:textColorHint="#cccccc"
+            android:textSize="42px" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_marginTop="3px"
+        android:background="@color/bgWhite"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:gravity="center_vertical"
+            android:paddingLeft="61px"
+            android:text="密         码 :"
+            android:textColor="@color/textMain"
+            android:textSize="42px" />
+
+
+        <EditText
+            android:layout_width="0px"
+            android:layout_height="150px"
+            android:layout_weight="1"
+            android:background="@color/bgWhite"
+            android:gravity="center_vertical|end"
+            android:hint="6-16个字符,区分大小字母"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:paddingRight="75px"
+            android:textColor="#333333"
+            android:textColorHint="#cccccc"
+            android:textSize="42px" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_marginTop="3px"
+        android:background="@color/bgWhite"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="61px"
+            android:text="确认密码 :"
+            android:textColor="@color/textMain"
+            android:textSize="42px" />
+
+
+        <EditText
+            android:layout_width="0px"
+            android:layout_height="150px"
+            android:layout_weight="1"
+            android:background="@color/bgWhite"
+            android:gravity="center_vertical|end"
+            android:hint="6-16个字符,区分大小字母"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:paddingRight="75px"
+            android:textColor="#333333"
+            android:textColorHint="#cccccc"
+            android:textSize="42px" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <Button
+        android:id="@+id/btnEnsure"
+        android:layout_width="960px"
+        android:layout_height="130px"
+        android:layout_marginTop="61px"
+        android:background="@drawable/shape_btn_round_app_color"
+        android:text="提交"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#FFF"
+        android:textSize="42px" />
+
+</com.zhy.autolayout.AutoLinearLayout>

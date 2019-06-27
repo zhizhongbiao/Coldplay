@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:orientation="vertical">
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="144px"
+        android:background="@color/appColor">
+
+        <com.flyco.tablayout.SegmentTabLayout
+            android:id="@+id/stTablayout"
+            android:layout_width="540px"
+            android:layout_height="90px"
+            android:layout_centerInParent="true"
+            app:tl_bar_color="@color/appColor"
+            app:tl_bar_stroke_color="#FFFFFF"
+            app:tl_indicator_color="#FFFFFF"
+            app:tl_indicator_corner_radius="13px"
+            app:tl_tab_space_equal="true"
+            app:tl_textSelectColor="@color/appColor"
+            app:tl_textUnselectColor="#FFFFFF"
+            app:tl_textsize="14sp" />
+
+
+        <ImageView
+            android:id="@+id/ivSearch"
+            android:layout_width="138px"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="43px"
+            android:paddingLeft="40px"
+            android:paddingRight="40px"
+            android:paddingTop="43px"
+            android:src="@mipmap/search2" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/llSubject"
+        android:layout_width="match_parent"
+        android:layout_height="145px"
+        android:background="#FFF"
+        android:orientation="horizontal">
+
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/llRegion"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvRegion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="区域"
+                android:textColor="@color/text_black"
+                android:textSize="42px" />
+
+            <ImageView
+                android:layout_width="58px"
+                android:layout_height="58px"
+                android:layout_marginLeft="24px"
+                android:src="@mipmap/bottom_arrow"
+                app:layout_auto_basewidth="height" />
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20px"
+            android:layout_marginTop="20px"
+            android:background="@color/bgColor" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/llAveragePrice"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="均价"
+                android:textColor="@color/text_black"
+                android:textSize="42px" />
+
+            <ImageView
+                android:layout_width="58px"
+                android:layout_height="58px"
+                android:layout_marginLeft="24px"
+                android:src="@mipmap/bottom_arrow"
+                app:layout_auto_basewidth="height" />
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20px"
+            android:layout_marginTop="20px"
+            android:background="@color/bgColor" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/llType"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvEstateType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="类型"
+                android:textColor="@color/text_black"
+                android:textSize="42px" />
+
+            <ImageView
+                android:layout_width="58px"
+                android:layout_height="58px"
+                android:layout_marginLeft="24px"
+                android:src="@mipmap/bottom_arrow"
+                app:layout_auto_basewidth="height" />
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#000" />
+
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            layout="@layout/view_empty_list"
+            android:visibility="gone" />
+
+
+        <cn.com.tianyudg.android_agent.base.basic.widget.refresh.RefreshLayout
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:pullMaxHeight="100dp"
+            app:pullViewHeight="80dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </cn.com.tianyudg.android_agent.base.basic.widget.refresh.RefreshLayout>
+
+
+    </com.zhy.autolayout.AutoFrameLayout>
+
+
+</LinearLayout>

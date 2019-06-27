@@ -1,0 +1,814 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bgWhite"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivEstate"
+            android:layout_width="match_parent"
+            android:layout_height="600px"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/place_holder" />
+
+        <View style="@style/split_line_gray_hor" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120px">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="60px"
+                android:text="万科金域香树"
+                android:textColor="@color/text_black"
+                android:textSize="50px" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tvUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="60px"
+                android:text="元/㎡"
+                android:textColor="@color/text_orange"
+                android:textSize="36px" />
+
+            <TextView
+                android:id="@+id/tvPrice"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tvUnit"
+                android:layout_toLeftOf="@+id/tvUnit"
+                android:text="11500"
+                android:textColor="@color/text_orange"
+                android:textSize="45px" />
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tvUnit"
+                android:layout_toLeftOf="@+id/tvPrice"
+                android:text="项目均价："
+                android:textColor="@color/text_orange"
+                android:textSize="36px" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tvLocate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30px"
+            android:layout_marginLeft="60px"
+            android:gravity="center_vertical"
+            android:text="[南城]东莞市南城宏图大道62号"
+            android:textColor="@color/text_black"
+            android:textSize="42px" />
+
+        <View
+            style="@style/split_line_gray_hor"
+            android:layout_marginLeft="60px"
+            android:layout_marginRight="60px" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:gravity="center_vertical">
+
+
+            <TextView
+                android:id="@+id/tvFxmj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分销面积："
+                android:layout_marginLeft="70px"
+                android:textColor="@color/text_gray_deep"
+                android:textSize="36px" />
+
+            <TextView
+                android:id="@+id/tvArea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvFxmj"
+                android:text="126-148㎡"
+                android:textColor="@color/text_gray_deep"
+                android:textSize="36px" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="租金范围："
+                android:layout_toLeftOf="@+id/tvRentRange"
+                android:textColor="@color/text_gray_deep"
+                android:textSize="36px" />
+
+            <TextView
+                android:id="@+id/tvRentRange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="70px"
+                android:text="100-200万"
+                android:textColor="@color/text_orange"
+                android:textSize="36px" />
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <View
+            style="@style/split_line_gray_hor"
+            android:layout_marginLeft="60px"
+            android:layout_marginRight="60px" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="190px">
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tvRecommend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="推荐客源"
+                    android:textColor="@color/text_gray_deep"
+                    android:textSize="36px" />
+
+                <TextView
+                    android:id="@+id/tvRecommendClientSource"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvRecommend"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="30px"
+                    android:text="10%/套"
+                    android:textColor="@color/text_orange"
+                    android:textSize="45px" />
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tvTakeDeal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="带客成交"
+                    android:textColor="@color/text_gray_deep"
+                    android:textSize="36px" />
+
+                <TextView
+                    android:id="@+id/tvDealed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvTakeDeal"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="30px"
+                    android:text="10%/套"
+                    android:textColor="@color/text_orange"
+                    android:textSize="45px" />
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvReport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="报备客户"
+                    android:textColor="@color/text_gray_deep"
+                    android:textSize="36px" />
+
+                <TextView
+                    android:id="@+id/tvReportCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvReport"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="30px"
+                    android:text="10"
+                    android:textColor="@color/text_orange"
+                    android:textSize="45px" />
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View style="@style/split_line_gray_hor" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="136px"
+            android:background="@color/theme_gray">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="60px"
+                android:text="佣金规则"
+                android:textColor="@color/text_black"
+                android:textSize="42px" />
+
+            <ImageView
+                android:id="@+id/ivCommissionExplain"
+                android:layout_width="158px"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:paddingBottom="34px"
+                android:paddingLeft="45px"
+                android:paddingRight="45px"
+                android:paddingTop="34px"
+                android:src="@mipmap/rule_explain" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <View style="@style/split_line_gray_hor" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:gravity="center_vertical">
+
+
+            <TextView
+                android:id="@+id/tvSyf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70px"
+                android:text="收佣方："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="36px" />
+
+            <TextView
+                android:id="@+id/tvReceptCommission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvSyf"
+                android:text="盘方收佣"
+                android:textColor="@color/text_gray_deep"
+                android:textSize="36px" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/tvBaseCommission"
+                android:text="保底佣金："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="36px" />
+
+            <TextView
+                android:id="@+id/tvBaseCommission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="70px"
+                android:text="45%"
+                android:textColor="@color/text_gray_deep"
+                android:textSize="36px" />
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <View
+            style="@style/split_line_gray_hor"
+            android:layout_marginLeft="60px"
+            android:layout_marginRight="60px" />
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvHs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70px"
+                android:text="房源："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="36px" />
+
+            <TextView
+                android:id="@+id/tvHouseSource"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvHs"
+                android:text="10%"
+                android:textColor="@color/text_orange"
+                android:textSize="36px" />
+
+            <TextView
+                android:id="@+id/tvRe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="420px"
+                android:text="复盘："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="36px" />
+
+            <TextView
+                android:id="@+id/tvRecovery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvRe"
+                android:text="10%"
+                android:textColor="@color/text_orange"
+                android:textSize="36px" />
+
+            <TextView
+                android:id="@+id/tvKey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="800px"
+                android:text="钥匙："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="36px" />
+
+            <TextView
+                android:id="@+id/tvTakeKey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvKey"
+                android:text="10%"
+                android:textColor="@color/text_orange"
+                android:textSize="36px" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvCs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70px"
+                android:text="客源："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="36px" />
+
+            <TextView
+                android:id="@+id/tvClientSource"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvCs"
+                android:text="10%"
+                android:textColor="@color/text_orange"
+                android:textSize="36px" />
+
+            <TextView
+                android:id="@+id/tvC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="420px"
+                android:text="带看："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="36px" />
+
+            <TextView
+                android:id="@+id/tvCarry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvC"
+                android:text="10%"
+                android:textColor="@color/text_orange"
+                android:textSize="36px" />
+
+            <TextView
+                android:id="@+id/tvUnique"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="800px"
+                android:text="独家："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="36px" />
+
+            <TextView
+                android:id="@+id/tvAuthor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvUnique"
+                android:text="10%"
+                android:textColor="@color/text_orange"
+                android:textSize="36px" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+        <View style="@style/split_line_gray_hor" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="136px"
+            android:background="@color/theme_gray">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="60px"
+                android:text="分销规则"
+                android:textColor="@color/text_black"
+                android:textSize="45px" />
+
+            <ImageView
+                android:id="@+id/ivSaleExplain"
+                android:layout_width="158px"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:paddingBottom="34px"
+                android:paddingLeft="45px"
+                android:paddingRight="45px"
+                android:paddingTop="34px"
+                android:src="@mipmap/rule_explain" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <View style="@style/split_line_gray_hor" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:layout_marginLeft="60px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="410px"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="客户界定："
+                    android:textColor="@color/text_gray_deep"
+                    android:textSize="36px" />
+
+                <TextView
+                    android:id="@+id/tvClientType"
+                    android:layout_width="180px"
+                    android:layout_height="wrap_content"
+                    android:text="现场报备"
+                    android:textColor="@color/text_black"
+                    android:textSize="36px" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="145px"
+                android:text="房源界定："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="36px" />
+
+            <TextView
+                android:id="@+id/tvHouseType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="报备签到"
+                android:textColor="@color/text_black"
+                android:textSize="36px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            style="@style/split_line_gray_hor"
+            android:layout_marginLeft="60px"
+            android:layout_marginRight="60px" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:layout_marginLeft="60px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="410px"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="客户保护期："
+                    android:textColor="@color/text_gray_deep"
+                    android:textSize="36px" />
+
+                <TextView
+                    android:id="@+id/tvClientProtectDay"
+                    android:layout_width="180px"
+                    android:layout_height="wrap_content"
+                    android:text="7天"
+                    android:textColor="@color/text_black"
+                    android:textSize="36px" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="145px"
+                android:text="预约保护期："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="36px" />
+
+            <TextView
+                android:id="@+id/tvAppointmentProtectDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30天"
+                android:textColor="@color/text_black"
+                android:textSize="36px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            style="@style/split_line_gray_hor"
+            android:layout_marginLeft="60px"
+            android:layout_marginRight="60px" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:layout_marginLeft="60px"
+            android:gravity="center_vertical">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="410px"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="看房保护期："
+                    android:textColor="@color/text_gray_deep"
+                    android:textSize="36px" />
+
+                <TextView
+                    android:id="@+id/tvLookHouseProtectDay"
+                    android:layout_width="180px"
+                    android:layout_height="wrap_content"
+                    android:text="7天"
+                    android:textColor="@color/text_black"
+                    android:textSize="36px" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="145px"
+                android:text="房源保护期："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="36px" />
+
+            <TextView
+                android:id="@+id/tvHouseSourceProtectDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7天"
+                android:textColor="@color/text_black"
+                android:textSize="36px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            style="@style/split_line_gray_hor"
+            android:layout_marginLeft="60px"
+            android:layout_marginRight="60px" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:layout_marginLeft="60px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="410px"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="结佣节点："
+                    android:textColor="@color/text_gray_deep"
+                    android:textSize="36px" />
+
+                <TextView
+                    android:id="@+id/tvCommissionNode"
+                    android:layout_width="180px"
+                    android:layout_height="wrap_content"
+                    android:text="签约成功"
+                    android:textColor="@color/text_black"
+                    android:textSize="36px" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="145px"
+                android:text="结佣周期："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="36px" />
+
+            <TextView
+                android:id="@+id/tvCommissionCircle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7天"
+                android:textColor="@color/text_black"
+                android:textSize="36px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            style="@style/split_line_gray_hor"
+            android:layout_marginLeft="60px"
+            android:layout_marginRight="60px" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:layout_marginLeft="60px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="410px"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="客源奖："
+                    android:textColor="@color/text_gray_deep"
+                    android:textSize="36px" />
+
+                <TextView
+                    android:id="@+id/tvClientSourceReword"
+                    android:layout_width="180px"
+                    android:layout_height="wrap_content"
+                    android:text="500元"
+                    android:textColor="@color/text_black"
+                    android:textSize="36px" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="145px"
+                android:text="房源奖："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="36px" />
+
+            <TextView
+                android:id="@+id/tvHouseSourceReword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100元"
+                android:textColor="@color/text_black"
+                android:textSize="36px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            style="@style/split_line_gray_hor"
+            android:layout_marginLeft="60px"
+            android:layout_marginRight="60px" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:layout_marginLeft="60px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="410px"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="带客奖："
+                    android:textColor="@color/text_gray_deep"
+                    android:textSize="36px" />
+
+                <TextView
+                    android:id="@+id/tvCarryReword"
+                    android:layout_width="180px"
+                    android:layout_height="wrap_content"
+                    android:text="300元"
+                    android:textColor="@color/text_black"
+                    android:textSize="36px" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="145px"
+                android:text="保底佣金："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="36px"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvProtectCommission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="300元"
+                android:textColor="@color/text_black"
+                android:textSize="36px"
+                android:visibility="gone" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            style="@style/split_line_gray_hor"
+            android:layout_marginLeft="60px"
+            android:layout_marginRight="60px" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="140px"
+            android:background="@color/theme_gray"
+            android:gravity="center_vertical"
+            android:paddingLeft="60px"
+            android:text="小区优势"
+            android:id="@+id/tvCellAdvantageTitle"
+            android:textColor="@color/text_black"
+            android:textSize="45px" />
+
+
+        <View style="@style/split_line_gray_hor" />
+
+        <TextView
+            android:id="@+id/tvCellAdvantage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35px"
+            android:layout_marginLeft="60px"
+            android:layout_marginRight="60px"
+            android:layout_marginTop="35px"
+            android:text="11111111111111111111111111111111111111111"
+            android:textColor="@color/text_gray_deep"
+            android:textSize="36px" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20px"
+            android:background="@color/bgGray"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</ScrollView>
+
+

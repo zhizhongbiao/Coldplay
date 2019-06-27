@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tvMonth"
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:gravity="center_vertical"
+        android:paddingLeft="61px"
+        android:text="5月"
+        android:textColor="#262626"
+        android:textSize="42px" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bgWhite">
+
+
+        <TextView
+            android:id="@+id/tvDateOfWeek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="69px"
+            android:layout_marginTop="32px"
+            android:text="周六"
+            android:textColor="#b3b3b3"
+            android:textSize="39px" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDateOfWeek"
+            android:layout_marginBottom="32px"
+
+            android:layout_marginLeft="61px"
+            android:layout_marginTop="10px"
+            android:text="06-06"
+            android:textColor="#b3b3b3"
+            android:textSize="39px" />
+
+
+        <TextView
+            android:id="@+id/tvBillType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="99px"
+
+            android:layout_toRightOf="@+id/tvDate"
+            android:text="佣金分润"
+
+            android:textColor="#b3b3b3"
+            android:textSize="39px" />
+
+
+        <TextView
+            android:id="@+id/tvMoneyCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="109px"
+            android:text="+5645565"
+
+            android:textColor="@color/appColor"
+            android:textSize="39px" />
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+</LinearLayout>

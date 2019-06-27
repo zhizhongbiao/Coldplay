@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:orientation="vertical">
+
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:id="@+id/flTitleContainer"
+        android:layout_width="match_parent"
+        android:layout_height="108px" />
+
+
+    <cn.com.tianyudg.android_agent.base.basic.widget.refresh.RefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_marginTop="2px"
+        android:layout_weight="1"
+        app:pullMaxHeight="100dp"
+        app:pullViewHeight="80dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </cn.com.tianyudg.android_agent.base.basic.widget.refresh.RefreshLayout>
+
+</LinearLayout>

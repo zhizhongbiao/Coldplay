@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgGray"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:layout_marginBottom="30px"
+        android:background="@color/bgWhite"
+        android:gravity="center_vertical"
+        android:paddingLeft="47px"
+        android:text="到账银行"
+        android:textSize="42px"
+        android:textColor="@color/textMinor" />
+
+    <include layout="@layout/layout_common_recyclerview" />
+
+</LinearLayout>

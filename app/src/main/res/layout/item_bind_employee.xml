@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140px"
+    android:background="@color/bgWhite"
+    android:layout_marginTop="2px"
+   >
+
+
+    <TextView
+        android:id="@+id/tvEmployeeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="60px"
+        android:text="李白"
+        android:textColor="#333333"
+        android:textSize="42px"
+        />
+    
+    <CheckBox
+        android:id="@+id/ivCheckable"
+        android:background="@drawable/selector_check_box"
+        android:button="@null"
+        android:layout_width="42px"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="60px"
+        android:layout_height="42px" />
+
+</RelativeLayout>

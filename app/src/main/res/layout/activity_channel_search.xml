@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/rlToobar"
+        android:layout_width="match_parent"
+        android:layout_height="144px"
+        android:background="@color/appColor">
+
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="120px"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingBottom="42px"
+            android:paddingLeft="30px"
+            android:paddingRight="55px"
+            android:paddingTop="42px"
+
+            android:src="@mipmap/back_up" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="25px"
+            android:layout_marginTop="25px"
+            android:layout_toLeftOf="@+id/tvEnsure"
+            android:layout_toRightOf="@+id/ivBack"
+            android:background="@drawable/shape_search_frame_bg"
+            android:gravity="center_vertical">
+
+
+            <EditText
+                android:id="@+id/etSearch"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:background="#FFF"
+                android:gravity="center_vertical"
+                android:hint="请输入中介名称"
+                android:paddingLeft="22px"
+                android:layout_marginLeft="8px"
+                android:textColor="#000"
+                android:textColorHint="#cccccc"
+                android:textSize="45px" />
+
+
+            <ImageView
+                android:layout_width="58px"
+                app:layout_auto_basewidth="height"
+                android:layout_height="58px"
+                android:layout_marginRight="25px"
+                android:src="@mipmap/search_grey" />
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+        <TextView
+            android:id="@+id/tvEnsure"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+           android:paddingLeft="42px"
+            android:paddingRight="30px"
+            android:text="确定"
+            android:gravity="center_vertical"
+            android:textColor="#fff"
+            android:textSize="54px" />
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"/>
+
+</LinearLayout>

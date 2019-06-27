@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:orientation="vertical">
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/rlMyInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/setting_background"
+
+        >
+
+        <cn.com.tianyudg.android_agent.base.basic.widget.image.CircleImageView
+            android:id="@+id/ivAvatar"
+            android:layout_width="350px"
+            android:layout_height="350px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100px"
+            android:padding="48px"
+            android:src="@mipmap/place_holder"
+            app:civ_border_color="#99FFFFFF"
+            app:civ_border_width="2px"
+            app:layout_auto_basewidth="height" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50px"
+            android:layout_marginTop="250px"
+            android:src="@mipmap/arrow_right2" />
+
+
+        <TextView
+            android:id="@+id/tvAgentName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivAvatar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="79px"
+            android:text="dftgdfgfd 154654  "
+            android:textColor="#fefefe"
+            android:textSize="42px" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tvAgentName"
+            android:layout_toRightOf="@+id/tvAgentName"
+            android:background="@color/appColor"
+            android:padding="3px"
+            android:text="子账号  "
+            android:textColor="@color/bgWhite"
+            android:textSize="32px" />
+
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAgentName"
+            android:layout_marginBottom="20px"
+            android:orientation="horizontal"
+            android:paddingBottom="25px"
+            android:paddingTop="25px">
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal|bottom"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvSignedMiddleCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="0"
+                        android:textColor="#FFFFFF"
+                        android:textSize="66px" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+
+                        android:layout_marginBottom="5px"
+                        android:layout_marginLeft="18px"
+                        android:text="个"
+                        android:textColor="#FFFFFF"
+                        android:textSize="36px" />
+
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvSignedMiddleCount"
+
+                    android:layout_marginTop="5px"
+                    android:text="速卖通"
+                    android:textColor="#FFFFFF"
+                    android:textSize="42px" />
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal|bottom"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvSignedAgentCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="0"
+                        android:textColor="#FFFFFF"
+                        android:textSize="66px" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+
+                        android:layout_marginBottom="5px"
+                        android:layout_marginLeft="18px"
+                        android:text="个"
+                        android:textColor="#FFFFFF"
+                        android:textSize="36px" />
+
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvSignedMiddleCount"
+
+                    android:layout_marginTop="5px"
+                    android:text="渠道"
+                    android:textColor="#FFFFFF"
+                    android:textSize="42px" />
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="58px"
+        android:background="@color/splitLineColor" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/rlMyShareStatistics"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:background="#ffffff">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="58px"
+            android:text="业绩统计"
+            android:textColor="#333333"
+            android:textSize="42px" />
+
+        <ImageView
+            android:layout_width="42px"
+            android:layout_height="42px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="59px"
+            android:background="@mipmap/arrow_right" />
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/rlAccountSetting"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_marginTop="30px"
+
+        android:background="#ffffff">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="58px"
+            android:text="账号设置"
+            android:textColor="#333333"
+            android:textSize="42px" />
+
+        <ImageView
+            android:layout_width="42px"
+            android:layout_height="42px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="59px"
+            android:background="@mipmap/arrow_right" />
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2px"
+    android:background="#ffffff">
+
+
+    <ImageView
+        android:id="@+id/ivEstate"
+        android:layout_width="360px"
+        android:layout_height="240px"
+        android:layout_margin="30px"
+        android:src="@mipmap/place_holder" />
+
+    <TextView
+        android:id="@+id/tvEstateName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:layout_toRightOf="@+id/ivEstate"
+        android:text="楼盘名字"
+        android:textColor="#333333"
+        android:textSize="42px" />
+
+    <TextView
+        android:id="@+id/tvEstateType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvEstateName"
+        android:layout_marginTop="40px"
+        android:layout_toRightOf="@+id/ivEstate"
+        android:text="洋楼"
+        android:textColor="#98cb22"
+        android:textSize="36px" />
+
+    <View
+        android:layout_width="2px"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/tvEstateType"
+        android:layout_alignTop="@+id/tvEstateType"
+        android:layout_marginLeft="23px"
+        android:layout_toRightOf="@+id/tvEstateType"
+        android:background="@color/bgColor" />
+
+
+    <TextView
+        android:id="@+id/tvEstateLocate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvEstateType"
+        android:layout_alignTop="@+id/tvEstateType"
+        android:layout_marginLeft="48px"
+        android:layout_toRightOf="@+id/tvEstateType"
+        android:text="南城"
+        android:textColor="#999999"
+        android:textSize="36px" />
+
+
+    <TextView
+        android:id="@+id/tvRentRange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvEstateType"
+        android:layout_marginTop="40px"
+        android:layout_toRightOf="@+id/ivEstate"
+        android:text="租金范围:"
+        android:textColor="#999999"
+        android:textSize="36px" />
+
+
+    <TextView
+        android:id="@+id/tvRentMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvRentRange"
+        android:layout_alignTop="@+id/tvRentRange"
+        android:layout_marginLeft="25px"
+        android:layout_toRightOf="@+id/tvRentRange"
+        android:text="200-300"
+        android:textColor="@color/appColor"
+        android:textSize="36px" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvRentMoney"
+        android:layout_alignTop="@+id/tvRentMoney"
+        android:layout_toRightOf="@+id/tvRentMoney"
+        android:text="元/月"
+        android:visibility="gone"
+        android:textColor="#999999"
+        android:textSize="36px" />
+
+ 
+   
+
+
+
+
+</RelativeLayout>

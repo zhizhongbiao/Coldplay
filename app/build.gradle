@@ -1,0 +1,85 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.jakewharton.butterknife'
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.waterflower.coldplay"
+        minSdkVersion 17
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+//解决冲突 同一版本
+configurations.all {
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        def requested = details.requested
+        if (requested.group == 'com.android.support') {
+            if (!requested.name.startsWith("multidex")) {
+                details.useVersion '26.1.0'
+            }
+        }
+    }
+}
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:recyclerview-v7:26.1.0'
+    compile 'com.android.support:design:26.1.0'
+    compile 'com.android.support:cardview-v7:26.1.0'
+
+    //Butterknife
+    implementation 'com.jakewharton:butterknife:8.4.0'
+    //和api一样，有一点不同，就是本依赖只能在本模块使用，本模块以外不能访问该依赖中的所有东西
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+
+    //AutoLayout
+    implementation 'com.zhy:autolayout:1.4.5'
+    //JpTabBar
+    implementation 'com.jpeng:JPTabBar:1.2.3'
+//    implementation 'com.jpeng:JPTabBar:1.4.0'
+    /*权限*/
+    implementation 'com.github.hotchemi:permissionsdispatcher:2.3.2'
+    annotationProcessor 'com.github.hotchemi:permissionsdispatcher-processor:2.3.2'
+    annotationProcessor 'com.github.hotchemi:permissionsdispatcher-processor:2.3.2'
+    //UI布局
+    implementation 'me.yokeyword:fragmentation:0.9.0'
+    /*图片*/
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.jph.takephoto:takephoto_library:4.0.3'
+    /*json*/
+    implementation 'com.alibaba:fastjson:1.1.57.android'
+    /*net*/
+    implementation 'com.lzy.net:okgo:2.1.4'
+    implementation 'org.greenrobot:eventbus:3.0.0'
+
+    /*dialog*/
+    //    implementation 'com.orhanobut:dialogplus:1.11@aar'
+    implementation 'com.afollestad.material-dialogs:core:0.9.4.5'
+
+    /*recycleradapter*/
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.25'
+    //FlycoTabLayout
+    implementation 'com.android.support:support-v4:26.1.0'
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.0.2@aar'
+    //    leakcanary
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
+    implementation project(':adapterlibrary')
+
+    //SquareLoading
+    implementation 'com.github.yuweiguocn:SquareLoading:v1.1.0'
+
+    //谷歌Xing包
+    compile 'com.google.zxing:core:3.2.1'
+}

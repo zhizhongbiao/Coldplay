@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bgColor"
+    android:layout_marginTop="2px"
+    android:orientation="vertical">
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/llMonth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60px"
+            android:layout_marginTop="34px"
+            android:text="2017年5月"
+            android:textColor="#333333"
+            android:textSize="45px" />
+
+        <TextView
+            android:id="@+id/tvMonthMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="38px"
+            android:layout_marginLeft="60px"
+            android:layout_marginTop="24px"
+            android:text="本月已提现 $516465456.55  总共提现$556656.22"
+            android:textColor="#666666"
+            android:textSize="36px" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bgWhite">
+
+
+        <TextView
+            android:id="@+id/tvIncomeFromInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60px"
+            android:layout_marginTop="47px"
+            android:text="万家分润-中捷地产"
+            android:textColor="#333333"
+            android:textSize="45px" />
+
+        <TextView
+            android:id="@+id/tvIncomeTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvIncomeFromInfo"
+            android:layout_marginBottom="40px"
+            android:layout_marginLeft="60px"
+            android:layout_marginTop="24px"
+
+            android:text="1月25日  12:00"
+            android:textColor="#666666"
+            android:textSize="36px" />
+
+
+        <TextView
+            android:id="@+id/tvIncome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="60px"
+            android:layout_marginTop="47px"
+            android:text="-85656"
+            android:textColor="@color/appColor"
+            android:textSize="45px" />
+
+        <TextView
+            android:id="@+id/tvBalanceState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvIncomeTime"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="60px"
+            android:text="已结算"
+            android:textColor="@color/textMinor"
+            android:textSize="42px" />
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+</LinearLayout>

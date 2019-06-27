@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100px"
+    android:background="@color/bgWhite"
+    android:gravity="center_vertical">
+
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="60px"
+        android:layout_marginRight="30px"
+        android:text="- - -"
+        android:textColor="#333333"
+        android:textSize="42px" />
+
+
+    <cn.com.tianyudg.android_agent.base.basic.widget.statistics.PercentLineView
+        android:id="@+id/plv"
+        android:layout_width="450px"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+
+        app:line_color="@color/appColor"
+        app:line_height="15px" />
+
+
+    <TextView
+        android:id="@+id/tvCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="60px"
+        android:text="00.00元"
+        android:textColor="@color/textMain"
+        android:textSize="42px" />
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

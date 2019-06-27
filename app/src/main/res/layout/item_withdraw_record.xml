@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30px"
+    android:background="@color/bgWhite"
+    android:orientation="horizontal">
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60px"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="66px"
+            android:layout_height="66px"
+            android:layout_marginTop="35px"
+            android:src="@mipmap/done_true" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="24px"
+            android:text="提交申请"
+            android:textColor="@color/appColor"
+            android:textSize="42px" />
+
+        <TextView
+
+            android:id="@+id/tvApplyTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50px"
+            android:layout_marginTop="14px"
+            android:text="201-12-12"
+            android:textColor="@color/textMinor"
+            android:textSize="36px" />
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <ImageView
+        android:layout_width="61px"
+        android:layout_height="41px"
+        android:layout_marginLeft="45px"
+        android:layout_marginTop="83px"
+        android:background="@drawable/selector_arrow" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60px"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivWithdrawState"
+            android:layout_width="66px"
+            android:layout_height="66px"
+            android:layout_marginTop="35px"
+            android:src="@drawable/selector_money" />
+
+        <TextView
+
+            android:id="@+id/tvWithdrawState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="24px"
+            android:text="提交成功"
+            android:textColor="@color/appColor"
+            android:textSize="42px" />
+
+        <TextView
+
+            android:id="@+id/tvWithdrawStateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50px"
+            android:layout_marginTop="14px"
+            android:text="201-12-12"
+            android:textColor="@color/textMinor"
+            android:textSize="36px" />
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <View
+        android:layout_width="0px"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="70px"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="20px"
+            android:text="提现金额(元)"
+            android:textColor="@color/textMinor"
+            android:textSize="42px" />
+
+        <TextView
+
+
+            android:id="@+id/tvWithdrawCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:text="5131313"
+            android:textColor="@color/textMain"
+            android:textSize="54px" />
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgGray"
+    android:orientation="vertical">
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bgWhite">
+
+        <TextView
+            android:id="@+id/tvIncomeFromInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="72px"
+            android:text="佣金分佣-万科国际公寓"
+            android:textColor="@color/textMinor"
+            android:textSize="45px" />
+
+        <TextView
+            android:id="@+id/tvIncomeMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvIncomeFromInfo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36px"
+
+            android:textColor="@color/appColor"
+            android:textSize="72px" />
+
+        <TextView
+            android:id="@+id/tvIncomeState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tvIncomeMoney"
+            android:layout_marginBottom="35px"
+            android:layout_marginRight="47px"
+            android:layout_marginTop="36px"
+            android:text="已结算"
+            android:textColor="@color/textLesser"
+            android:textSize="42px" />
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_marginTop="2px"
+        android:background="@color/bgWhite">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50px"
+            android:gravity="center_vertical"
+            android:text="成交时间："
+            android:textColor="@color/text_gray_deep"
+            android:textSize="42px" />
+
+        <TextView
+            android:id="@+id/tvDealedTime"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="70px"
+            android:gravity="center_vertical"
+            android:text="2013-12-12"
+            android:textColor="@color/text_black"
+            android:textSize="42px" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_marginTop="2px"
+        android:background="@color/bgWhite">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50px"
+            android:gravity="center_vertical"
+            android:text="结算时间："
+            android:textColor="@color/text_gray_deep"
+            android:textSize="42px" />
+
+        <TextView
+            android:id="@+id/tvDoneTime"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="70px"
+            android:gravity="center_vertical"
+            android:text="2013-12-12"
+            android:textColor="@color/text_black"
+            android:textSize="42px" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_marginTop="30px"
+        android:background="@color/bgWhite">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50px"
+            android:gravity="center_vertical"
+            android:text="收入类别："
+            android:textColor="@color/text_gray_deep"
+            android:textSize="42px" />
+
+        <TextView
+            android:id="@+id/tvIncomeType"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="70px"
+            android:gravity="center_vertical"
+            android:text="2013-12-12"
+            android:textColor="@color/text_black"
+            android:textSize="42px" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_marginTop="2px"
+        android:background="@color/bgWhite">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50px"
+            android:gravity="center_vertical"
+            android:text="商户名称："
+            android:textColor="@color/text_gray_deep"
+            android:textSize="42px" />
+
+        <TextView
+            android:id="@+id/tvDeveloperName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="70px"
+            android:gravity="center_vertical"
+            android:text="万科"
+            android:textColor="@color/text_black"
+            android:textSize="42px" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_marginTop="2px"
+        android:background="@color/bgWhite">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50px"
+            android:gravity="center_vertical"
+            android:text="项目类别："
+            android:textColor="@color/text_gray_deep"
+            android:textSize="42px" />
+
+        <TextView
+            android:id="@+id/tvProjectType"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="70px"
+            android:gravity="center_vertical"
+            android:text="新房"
+            android:textColor="@color/text_black"
+            android:textSize="42px" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_marginTop="2px"
+        android:background="@color/bgWhite">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50px"
+            android:gravity="center_vertical"
+            android:text="成交总价："
+            android:textColor="@color/text_gray_deep"
+            android:textSize="42px" />
+
+        <TextView
+            android:id="@+id/tvTotalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="70px"
+            android:gravity="center_vertical"
+            android:text="244534355元"
+            android:textColor="@color/text_black"
+            android:textSize="42px" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_marginTop="2px"
+        android:background="@color/bgWhite">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50px"
+            android:gravity="center_vertical"
+            android:text="分润比例："
+            android:textColor="@color/text_gray_deep"
+            android:textSize="42px" />
+
+        <TextView
+            android:id="@+id/tvSharePercent"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="70px"
+            android:gravity="center_vertical"
+            android:text="3%"
+            android:textColor="@color/text_black"
+            android:textSize="42px" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_marginTop="2px"
+        android:background="@color/bgWhite">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50px"
+            android:gravity="center_vertical"
+            android:text="所得分润："
+            android:textColor="@color/text_gray_deep"
+            android:textSize="42px" />
+
+        <TextView
+            android:id="@+id/tvMyShare"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="70px"
+            android:gravity="center_vertical"
+            android:text="244534355元"
+            android:textColor="@color/text_black"
+            android:textSize="42px" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+</LinearLayout>

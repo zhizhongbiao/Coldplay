@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/llSubject"
+        android:layout_width="match_parent"
+        android:layout_height="145px"
+        android:layout_marginBottom="2px"
+
+        android:background="#FFF">
+
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/llIncomeType"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:paddingLeft="200px"
+            android:paddingRight="200px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvIncomeType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收入类型"
+                android:textColor="@color/text_black"
+                android:textSize="42px" />
+
+            <ImageView
+                android:layout_width="18px"
+                android:layout_height="12px"
+                android:layout_marginLeft="24px"
+                android:src="@mipmap/bottom_arrow"
+                app:layout_auto_basewidth="height" />
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <ImageView
+            android:layout_width="150px"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/selector_sort"
+            android:button="@null"
+            android:id="@+id/ivRank"
+            android:paddingBottom="50px"
+            android:paddingLeft="60px"
+            android:paddingRight="60px"
+            android:paddingTop="50px" />
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <include layout="@layout/layout_common_recyclerview" />
+
+</LinearLayout>

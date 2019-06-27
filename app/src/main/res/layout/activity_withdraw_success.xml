@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="132px"
+        android:layout_height="132px"
+        android:layout_marginTop="63px"
+        android:src="@mipmap/withdraw_success" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40px"
+        android:text="提现成功"
+        android:textColor="#333333"
+        android:layout_marginBottom="56px"
+        android:textSize="42px" />
+
+
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="136px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="59px"
+            android:text="提现金额"
+            android:textColor="#666666"
+            android:textSize="42px" />
+
+        <TextView
+            android:id="@+id/tvMoneyCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="59px"
+            android:text="3000元"
+            android:textColor="#333333"
+            android:textSize="42px" />
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:visibility="gone"
+        android:background="@color/bg_gray" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:visibility="gone"
+
+        android:layout_height="136px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="59px"
+            android:text="转入账户"
+            android:textColor="#666666"
+            android:textSize="42px" />
+
+        <TextView
+            android:id="@+id/tvToAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="59px"
+            android:text="中国银行(尾号4654654)"
+            android:textColor="#333333"
+            android:textSize="42px" />
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:visibility="gone"
+        android:background="@color/bg_gray" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="136px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="59px"
+            android:text="创建时间"
+            android:textColor="#666666"
+            android:textSize="42px" />
+
+        <TextView
+            android:id="@+id/tvCreateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="59px"
+            android:text="2017-05-02 12:45:00"
+            android:textColor="#333333"
+            android:textSize="42px" />
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:visibility="gone"
+        android:background="@color/bg_gray" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="136px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="59px"
+            android:text="到账时间"
+            android:textColor="#666666"
+            android:textSize="42px" />
+
+        <TextView
+            android:id="@+id/tvArriveTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="59px"
+            android:text="24小时内"
+            android:textColor="#333333"
+            android:textSize="42px" />
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:visibility="gone"
+        android:background="@color/bg_gray" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="136px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="59px"
+            android:text="交易流水号"
+            android:textColor="#666666"
+            android:textSize="42px" />
+
+        <TextView
+            android:id="@+id/tvTradeNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="59px"
+            android:text="JQ4545465465456"
+            android:textColor="#333333"
+            android:textSize="42px" />
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/withdrawTips"
+        android:paddingTop="30px"
+        android:paddingBottom="30px"
+        android:paddingLeft="60px"
+        android:paddingRight="60px"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/bg_gray" />
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:background="@color/bgGray">
+
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:layout_marginLeft="90px"
+            android:layout_marginRight="90px"
+            android:layout_marginTop="60px"
+            android:background="@drawable/shape_btn_round_app_color"
+            android:text="返回提现"
+            android:textColor="#FFF"
+            android:textSize="42px" />
+
+
+    </com.zhy.autolayout.AutoFrameLayout>
+
+
+</LinearLayout>

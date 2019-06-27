@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:orientation="vertical">
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="144px"
+        android:background="@color/appColor">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="渠道"
+            android:textColor="#FFFFFF"
+            android:textSize="54px" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/ivSearch"
+                android:layout_width="138px"
+                android:layout_height="match_parent"
+                android:paddingBottom="43px"
+                android:paddingLeft="40px"
+                android:paddingRight="40px"
+                android:paddingTop="43px"
+                android:src="@mipmap/search2" />
+
+            <ImageView
+                android:id="@+id/ivAdd"
+                android:layout_width="98px"
+                android:layout_height="match_parent"
+                android:paddingBottom="43px"
+                android:paddingRight="40px"
+                android:paddingTop="43px"
+                android:src="@mipmap/add" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <include layout="@layout/layout_common_recyclerview" />
+
+
+</LinearLayout>

@@ -1,0 +1,828 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.com.tianyudg.android_agent.base.basic.widget.scrollable.NoScrollScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bgWhite"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/ivEstate"
+            android:layout_width="match_parent"
+            android:layout_height="600px"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/place_holder" />
+
+        <View style="@style/split_line_gray_hor" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120px">
+
+            <TextView
+                android:id="@+id/tvProjectName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="60px"
+                android:text="- - -"
+                android:textColor="@color/text_black"
+                android:textSize="50px" />
+
+            <TextView
+                android:id="@+id/tvUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="60px"
+                android:text="元/㎡"
+                android:textColor="@color/text_orange"
+                android:textSize="36px" />
+
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tvUnit"
+                android:layout_toLeftOf="@+id/tvUnit"
+                android:text="0"
+                android:textColor="@color/text_orange"
+                android:textSize="45px" />
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignBottom="@+id/tvUnit"-->
+            <!--android:layout_toLeftOf="@+id/tvPrice"-->
+            <!--android:text="项目均价："-->
+            <!--android:textColor="@color/text_orange"-->
+            <!--android:textSize="36px" />-->
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tvLocate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25px"
+            android:gravity="center_vertical"
+
+            android:paddingLeft="60px"
+            android:textColor="@color/text_black"
+            android:textSize="42px" />
+
+
+        <View
+            style="@style/split_line_gray_hor"
+            android:layout_marginLeft="60px"
+            android:layout_marginRight="60px" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:layout_marginLeft="60px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分销时间："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="36px" />
+
+            <TextView
+                android:id="@+id/tvSaleTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/text_black"
+                android:textSize="36px" />
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分销面积："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="36px" />
+
+            <TextView
+                android:id="@+id/tvSaleArea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/text_black"
+                android:textSize="36px" />
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:layout_marginLeft="60px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="项目对接："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="36px" />
+
+            <TextView
+                android:id="@+id/tvProjectAbutment"
+                android:layout_width="180px"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/text_black"
+                android:textSize="36px" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="145px"
+                android:text="电话："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="36px" />
+
+            <TextView
+                android:id="@+id/tvPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/text_black"
+                android:textSize="36px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="190px"
+            android:visibility="gone">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="推荐客源"
+                    android:textColor="@color/text_gray_deep"
+                    android:textSize="36px" />
+
+                <TextView
+                    android:id="@+id/tvRecommend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30px"
+                    android:text="10%/套"
+                    android:textColor="@color/text_orange"
+                    android:textSize="45px" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="带客成交"
+                    android:textColor="@color/text_gray_deep"
+                    android:textSize="36px" />
+
+                <TextView
+                    android:id="@+id/tvDealed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30px"
+                    android:text="10%/套"
+                    android:textColor="@color/text_orange"
+                    android:textSize="45px" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="报备客户"
+                    android:textColor="@color/text_gray_deep"
+                    android:textSize="36px" />
+
+                <TextView
+                    android:id="@+id/tvReport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30px"
+                    android:text="10个"
+                    android:textColor="@color/text_orange"
+                    android:textSize="45px" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            style="@style/split_line_gray_hor"
+            android:layout_marginLeft="60px"
+            android:layout_marginRight="60px" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="190px">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="渠道佣金"
+                    android:textColor="@color/text_gray_deep"
+                    android:textSize="36px" />
+
+                <TextView
+                    android:id="@+id/tvAgentShare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30px"
+                    android:text="0%"
+                    android:textColor="@color/text_orange"
+                    android:textSize="45px" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="渠道分润"
+                    android:textColor="@color/text_gray_deep"
+                    android:textSize="36px" />
+
+                <TextView
+                    android:id="@+id/tvProjectShare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30px"
+                    android:text="0%"
+                    android:textColor="@color/text_orange"
+                    android:textSize="45px" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/rlReportClient"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="报备客户"
+                        android:textColor="@color/text_gray_deep"
+                        android:textSize="36px" />
+
+                    <TextView
+                        android:id="@+id/tvReportClientCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="30px"
+                        android:text="0"
+                        android:textColor="@color/text_orange"
+                        android:textSize="45px" />
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View style="@style/split_line_gray_hor" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="140px"
+            android:background="@color/theme_gray">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="60px"
+                android:text="分销规则"
+                android:textColor="@color/text_black"
+                android:textSize="45px" />
+
+            <ImageView
+                android:id="@+id/ivExplain"
+                android:layout_width="158px"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:paddingBottom="34px"
+                android:paddingLeft="45px"
+                android:paddingRight="45px"
+                android:paddingTop="34px"
+                android:src="@mipmap/rule_explain" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <View style="@style/split_line_gray_hor" />
+
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:layout_marginLeft="60px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="410px"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="报备方式："
+                    android:textColor="@color/text_gray_deep"
+                    android:textSize="36px" />
+
+                <TextView
+                    android:id="@+id/tvReportType"
+                    android:layout_width="180px"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/text_black"
+                    android:textSize="36px" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="145px"
+                android:text="客户界定："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="36px" />
+
+            <TextView
+                android:id="@+id/tvClientType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/text_black"
+                android:textSize="36px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            style="@style/split_line_gray_hor"
+            android:layout_marginLeft="60px"
+            android:layout_marginRight="60px" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:layout_marginLeft="60px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="410px"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="报备保护期："
+                    android:textColor="@color/text_gray_deep"
+                    android:textSize="36px" />
+
+                <TextView
+                    android:id="@+id/tvReportProtectDay"
+                    android:layout_width="180px"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/text_black"
+                    android:textSize="36px" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="145px"
+                android:text="看房保护期："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="36px" />
+
+            <TextView
+                android:id="@+id/tvLookProtectDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0天"
+                android:textColor="@color/text_black"
+                android:textSize="36px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            style="@style/split_line_gray_hor"
+            android:layout_marginLeft="60px"
+            android:layout_marginRight="60px" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:layout_marginLeft="60px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="410px"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="结佣节点："
+                    android:textColor="@color/text_gray_deep"
+                    android:textSize="36px" />
+
+                <TextView
+                    android:id="@+id/tvCommissionStamp"
+                    android:layout_width="180px"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/text_black"
+                    android:textSize="36px" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="145px"
+                android:text="结佣周期："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="36px" />
+
+            <TextView
+                android:id="@+id/tvCommissionCircle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/text_black"
+                android:textSize="36px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            style="@style/split_line_gray_hor"
+            android:layout_marginLeft="60px"
+            android:layout_marginRight="60px" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:layout_marginLeft="60px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="410px"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="客源奖："
+                    android:textColor="@color/text_gray_deep"
+                    android:textSize="36px" />
+
+                <TextView
+                    android:id="@+id/tvSourceReward"
+                    android:layout_width="180px"
+                    android:layout_height="wrap_content"
+                    android:text="0元"
+                    android:textColor="@color/text_black"
+                    android:textSize="36px" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="145px"
+                android:text="带客奖："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="36px" />
+
+            <TextView
+                android:id="@+id/tvCarryReword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0元"
+                android:textColor="@color/text_black"
+                android:textSize="36px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            style="@style/split_line_gray_hor"
+            android:layout_marginLeft="60px"
+            android:layout_marginRight="60px" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:layout_marginLeft="60px"
+            android:gravity="center_vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="现金奖："
+                android:textColor="@color/text_gray_deep"
+                android:textSize="36px" />
+
+            <TextView
+                android:id="@+id/tvCashReword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0元"
+                android:textColor="@color/text_black"
+                android:textSize="36px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+        <View style="@style/split_line_gray_hor" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="140px"
+            android:background="@color/theme_gray"
+            android:gravity="center_vertical"
+            android:paddingLeft="60px"
+            android:text="现场优惠"
+            android:id="@+id/tvDiscountTitle"
+            android:textColor="@color/text_black"
+            android:textSize="45px" />
+
+        <View style="@style/split_line_gray_hor" />
+
+
+        <TextView
+            android:id="@+id/tvDiscount"
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:paddingLeft="60px"
+            android:gravity="center_vertical"
+            android:text="金域香树购房可领取9000元的购房红包"
+            android:textColor="@color/text_black"
+            android:textSize="42px" />
+
+        <View style="@style/split_line_gray_hor" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/llHouseType"
+            android:layout_width="match_parent"
+            android:layout_height="140px"
+            android:background="@color/theme_gray"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="60px"
+                android:text="户型"
+
+                android:textColor="@color/text_black"
+                android:textSize="45px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View style="@style/split_line_gray_hor" />
+
+        <cn.com.tianyudg.android_agent.base.basic.widget.scrollable.NonScrollRecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1px"
+            android:background="@color/bgGray" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="140px"
+            android:background="@color/theme_gray"
+            android:gravity="center_vertical"
+            android:paddingLeft="60px"
+            android:text="楼盘卖点"
+            android:id="@+id/tvSalePointTitle"
+            android:textColor="@color/text_black"
+            android:textSize="45px" />
+
+
+        <View style="@style/split_line_gray_hor" />
+
+        <TextView
+            android:id="@+id/tvSalePoint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35px"
+            android:layout_marginLeft="60px"
+            android:layout_marginRight="60px"
+            android:layout_marginTop="35px"
+            android:text="11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111"
+            android:textColor="@color/text_gray_deep"
+            android:textSize="36px" />
+
+
+        <View style="@style/split_line_gray_hor" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="140px"
+            android:background="@color/theme_gray"
+            android:gravity="center_vertical"
+            android:paddingLeft="60px"
+            android:text="目标客户"
+            android:id="@+id/tvTargetClientTitle"
+            android:textColor="@color/text_black"
+            android:textSize="45px" />
+
+
+        <View style="@style/split_line_gray_hor" />
+
+        <TextView
+            android:id="@+id/tvTargetClient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35px"
+            android:layout_marginLeft="60px"
+            android:layout_marginRight="60px"
+            android:layout_marginTop="35px"
+            android:text="11111111111111111111111111111111111111111111111111111111"
+            android:textColor="@color/text_gray_deep"
+            android:textSize="36px" />
+
+
+        <View style="@style/split_line_gray_hor" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="140px"
+            android:background="@color/theme_gray"
+            android:gravity="center_vertical"
+            android:paddingLeft="60px"
+            android:text="拓客技巧"
+            android:id="@+id/tvSkillTitle"
+            android:textColor="@color/text_black"
+            android:textSize="45px" />
+
+
+        <View style="@style/split_line_gray_hor" />
+
+        <TextView
+            android:id="@+id/tvFindClientSkill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60px"
+            android:layout_marginRight="60px"
+            android:layout_marginTop="35px"
+            android:layout_marginBottom="35px"
+            android:text="111111111111111111111"
+            android:textColor="@color/text_gray_deep"
+            android:textSize="36px" />
+
+        <View style="@style/split_line_gray_hor" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="140px"
+            android:background="@color/theme_gray"
+            android:gravity="center_vertical"
+            android:paddingLeft="60px"
+            android:text="分销动态"
+            android:id="@+id/tvSaleInfoTitle"
+            android:textColor="@color/text_black"
+            android:textSize="45px" />
+
+
+        <View style="@style/split_line_gray_hor" />
+
+        <TextView
+            android:id="@+id/tvSaleInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60px"
+            android:layout_marginRight="60px"
+            android:layout_marginTop="35px"
+            android:layout_marginBottom="35px"
+            android:text="111111111111111111111"
+            android:textColor="@color/text_gray_deep"
+            android:textSize="36px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20px"
+            android:background="@color/bgGray" />
+
+        <View style="@style/split_line_gray_hor" />
+
+        <Button
+            android:id="@+id/btnJoinTeam"
+            android:layout_width="960px"
+            android:layout_height="120px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="54px"
+            android:layout_marginTop="30px"
+            android:background="@drawable/shape_btn_round_app_color"
+            android:gravity="center"
+            android:text="加入团队"
+            android:textColor="@color/text_white"
+            android:textSize="42px"
+            android:visibility="gone" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</cn.com.tianyudg.android_agent.base.basic.widget.scrollable.NoScrollScrollView>
+
+

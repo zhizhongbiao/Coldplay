@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">IdolStyle</string>
+
+
+    <string name="withdrawTips">你的提现申请已经进入审核阶段,预计2个工作日内完成审核,周末及其他国家法定假日顺延,审核通过后资金将在1天内到账</string>
+</resources>

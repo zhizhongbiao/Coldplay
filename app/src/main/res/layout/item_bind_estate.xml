@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140px"
+    android:layout_marginTop="2px"
+    android:background="@color/bgWhite">
+
+
+    <TextView
+        android:id="@+id/tvEstateName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="60px"
+        android:text="万科中心"
+        android:textColor="#333333"
+        android:textSize="42px" />
+
+    <TextView
+        android:id="@+id/tvRegion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10px"
+        android:layout_toRightOf="@+id/tvEstateName"
+        android:text="(南城)"
+        android:textColor="#666666"
+        android:textSize="42px" />
+
+    <TextView
+        android:id="@+id/tvIsBinded"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="60px"
+        android:clickable="false"
+        android:gravity="center"
+        android:text="已绑定"
+        android:textColor="@color/textLesser"
+        android:textSize="42px" />
+
+</RelativeLayout>

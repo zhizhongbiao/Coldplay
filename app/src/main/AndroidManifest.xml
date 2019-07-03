@@ -27,6 +27,9 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".album.ui.activity.ActivityDetailActivity" />
+
+
 
         <meta-data
             android:name="design_width"

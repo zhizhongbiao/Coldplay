@@ -1,13 +1,12 @@
 package com.waterflower.coldplay.waterflower.adapter;
 
-import android.support.annotation.Nullable;
+import android.content.Context;
+import android.support.annotation.LayoutRes;
 import android.view.View;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
 import com.zhy.autolayout.utils.AutoUtils;
-
-import java.util.List;
 
 /**
  * FileName :  MyBaseAdapter
@@ -19,9 +18,17 @@ import java.util.List;
 public abstract class MyBaseAdapter<T> extends BaseQuickAdapter<T, BaseViewHolder> {
 
 
-    public MyBaseAdapter(int layoutResId) {
-        super(layoutResId);
+    protected Context context;
+    protected int type;
+
+    protected abstract @LayoutRes
+    int getLayoutResId();
+
+    public MyBaseAdapter() {
+        super(0);
+        super.mLayoutResId = getLayoutResId();
     }
+
 
     @Override
     protected BaseViewHolder createBaseViewHolder(View view) {
@@ -30,4 +37,8 @@ public abstract class MyBaseAdapter<T> extends BaseQuickAdapter<T, BaseViewHolde
     }
 
 
+    public <A extends MyBaseAdapter, D> void init(Context context, int type) {
+        this.context=context;
+        this.type=type;
+    }
 }

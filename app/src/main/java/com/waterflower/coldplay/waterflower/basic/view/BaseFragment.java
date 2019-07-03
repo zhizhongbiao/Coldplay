@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 
 import com.squareup.leakcanary.RefWatcher;
 import com.waterflower.coldplay.waterflower.basic.MainApplication;
+import com.waterflower.coldplay.waterflower.basic.utils.LogUtils;
 
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
@@ -53,7 +54,6 @@ public abstract class BaseFragment extends SupportFragment {
      */
     protected abstract void initView(Bundle savedInstanceState, Bundle args);
 
-
     @Override
     public void onDestroyView() {
         mUnbinder.unbind();
@@ -62,5 +62,11 @@ public abstract class BaseFragment extends SupportFragment {
         RefWatcher memoryWatcher = MainApplication.getMemoryWatcher(getActivity());
         if (memoryWatcher == null) return;
         memoryWatcher.watch(this);
+    }
+
+    public String getMyTag() {
+        String name = this.getClass().getName();
+        LogUtils.e("getMyTag   name=" + name);
+        return name;
     }
 }

@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/Coldplay.iml" filepath="$PROJECT_DIR$/Coldplay.iml" />
       <module fileurl="file://$PROJECT_DIR$/adapterlibrary/adapterlibrary.iml" filepath="$PROJECT_DIR$/adapterlibrary/adapterlibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chablis/chablis.iml" filepath="$PROJECT_DIR$/chablis/chablis.iml" />
     </modules>
   </component>
 </project>

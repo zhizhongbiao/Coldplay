@@ -13,6 +13,7 @@ import com.waterflower.coldplay.waterflower.basic.network.ResponseInfo;
 import com.waterflower.coldplay.waterflower.basic.presenter.BasePresenter;
 import com.waterflower.coldplay.waterflower.basic.presenter.MvpPresenter;
 import com.waterflower.coldplay.waterflower.basic.reveiver.NetworkStateEvent;
+import com.waterflower.coldplay.waterflower.basic.utils.LogUtils;
 import com.waterflower.coldplay.waterflower.basic.utils.ToastUtil;
 
 import org.greenrobot.eventbus.EventBus;
@@ -45,12 +46,10 @@ public abstract class MvpFragment<P extends MvpPresenter> extends BaseFragment i
         Class<? extends BasePresenter> presenterClass = (Class<? extends BasePresenter>) type.getActualTypeArguments()[0];
         try {
             this.presenter = (P) presenterClass.newInstance();
-        } catch (IllegalAccessException e) {
+            LogUtils.e("init presenter successfully");
+        } catch (Exception e) {
             e.printStackTrace();
-        } catch (Fragment.InstantiationException e) {
-            e.printStackTrace();
-        } catch (java.lang.InstantiationException e) {
-            e.printStackTrace();
+            LogUtils.e("init presenter failed  e="+e.getMessage());
         }
 
         presenter.attachView(this);

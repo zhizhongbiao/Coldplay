@@ -16,8 +16,8 @@ import com.jpeng.jptabbar.OnTabSelectListener;
 import com.jpeng.jptabbar.anno.NorIcons;
 import com.jpeng.jptabbar.anno.SeleIcons;
 import com.jpeng.jptabbar.anno.Titles;
-import com.waterflower.coldplay.album.ui.fragment.FgHome;
-import com.waterflower.coldplay.my.ui.fragment.MyFragment;
+import com.waterflower.coldplay.album.ui.fragment.AlbumFg;
+import com.waterflower.coldplay.my.ui.fragment.MyFg;
 import com.waterflower.coldplay.waterflower.basic.utils.ToastUtil;
 import com.waterflower.coldplay.waterflower.basic.view.BaseActivity;
 import com.waterflower.coldplay.waterflower.basic.view.BaseFragment;
@@ -38,7 +38,7 @@ public class MainActivity extends BaseActivity
     private long lastClick;
 
     @Titles
-    private static final String[] mTitles = {"首页", "我的"};
+    private static final String[] mTitles = {"云相册", "我的"};
 
     @NorIcons
     private static final int[] mNormalIcons = {R.mipmap.home_false, R.mipmap.my_false};
@@ -85,8 +85,8 @@ public class MainActivity extends BaseActivity
         tabbar.setTabListener(this);
 
         fragments = new ArrayList<>();
-        fragments.add(FgHome.newInstance());
-        fragments.add(MyFragment.newInstance());
+        fragments.add(AlbumFg.newInstance());
+        fragments.add(MyFg.newInstance());
 
         manager = getSupportFragmentManager();
         FragmentTransaction ft = manager.beginTransaction();
@@ -176,10 +176,14 @@ public class MainActivity extends BaseActivity
         long clickTimeStamp = System.currentTimeMillis();
         if (clickTimeStamp - lastClick > 2500) {
             ToastUtil.showShort("再按一次退出应用");
+            lastClick = clickTimeStamp;
             return;
         }
-        lastClick = clickTimeStamp;
+
         super.onBackPressedSupport();
     }
+
+
+
 
 }

@@ -1,16 +1,13 @@
 package com.waterflower.coldplay.album.ui.adapter;
 
 import android.content.Context;
-import android.view.View;
 import android.widget.ImageView;
 
-import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
 import com.waterflower.coldplay.R;
 import com.waterflower.coldplay.album.bean.NewListBean;
 import com.waterflower.coldplay.waterflower.adapter.MyBaseAdapter;
 import com.waterflower.coldplay.waterflower.basic.manager.ImageManager;
-import com.zhy.autolayout.utils.AutoUtils;
 
 
 /**
@@ -19,7 +16,7 @@ import com.zhy.autolayout.utils.AutoUtils;
  * Desc :  新房适配器
  */
 
-public class AlbumAdapter extends MyBaseAdapter<NewListBean.DataBean> {
+public class PhotoAdapter extends MyBaseAdapter<NewListBean.DataBean> {
 
     private Context context;
 
@@ -28,7 +25,10 @@ public class AlbumAdapter extends MyBaseAdapter<NewListBean.DataBean> {
         return R.layout.item_album;
     }
 
-    public AlbumAdapter(Context context) {
+    public PhotoAdapter() {
+    }
+
+    public PhotoAdapter(Context context) {
         super();
         this.context=context;
 

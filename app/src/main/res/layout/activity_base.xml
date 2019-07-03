@@ -10,7 +10,7 @@
         android:id="@+id/rlToobar"
         android:layout_width="match_parent"
         android:layout_height="144px"
-        android:background="@color/appColor">
+        android:background="@color/bgBlack">
 
 
         <ImageView
@@ -64,6 +64,22 @@
             android:textColor="#fff"
             android:textSize="42px"
             android:visibility="gone" />
+
+
+        <ImageView
+            android:id="@+id/ivMiddleRight"
+            android:layout_width="138px"
+            android:layout_height="match_parent"
+            android:paddingRight="40px"
+            android:paddingLeft="40px"
+            android:paddingBottom="43px"
+            android:paddingTop="43px"
+           android:layout_alignParentRight="true"
+            android:layout_marginRight="138px"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_launcher_round"
+            android:visibility="gone"
+            />
 
 
         <ImageView

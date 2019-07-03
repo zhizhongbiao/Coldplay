@@ -7,6 +7,8 @@ import android.view.View;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.waterflower.coldplay.R;
+import com.waterflower.coldplay.album.bean.NewListBean;
+import com.waterflower.coldplay.album.ui.activity.ActivityDetailActivity;
 import com.waterflower.coldplay.album.ui.adapter.AlbumAdapter;
 import com.waterflower.coldplay.waterflower.basic.model.BaseBean;
 import com.waterflower.coldplay.waterflower.basic.network.ApiConfig;
@@ -15,6 +17,8 @@ import com.waterflower.coldplay.waterflower.basic.presenter.MvpPresenter;
 import com.waterflower.coldplay.waterflower.basic.view.MvpFragment;
 import com.waterflower.coldplay.waterflower.basic.widget.refresh.NestedRefreshLayout;
 import com.waterflower.coldplay.waterflower.basic.widget.refresh.RefreshLayout;
+
+import java.util.ArrayList;
 
 import butterknife.BindView;
 
@@ -25,7 +29,7 @@ import butterknife.BindView;
  * Desc :
  */
 
-public class FgHome extends MvpFragment<MvpPresenter>
+public class AlbumFg extends MvpFragment<MvpPresenter>
         implements NestedRefreshLayout.OnRefreshListener
         , BaseQuickAdapter.RequestLoadMoreListener
         , BaseQuickAdapter.OnItemClickListener {
@@ -37,13 +41,12 @@ public class FgHome extends MvpFragment<MvpPresenter>
 
 
     private int page = 1;
-    private BaseQuickAdapter adapter;
+    private AlbumAdapter adapter;
     private int totalPage;
 
 
-
-    public static FgHome newInstance() {
-        FgHome newInstance = new FgHome();
+    public static AlbumFg newInstance() {
+        AlbumFg newInstance = new AlbumFg();
         return newInstance;
     }
 
@@ -59,12 +62,10 @@ public class FgHome extends MvpFragment<MvpPresenter>
     }
 
 
-
-
     @Override
     protected void loadData(Bundle savedInstanceState) {
 //        HomeListUtil.getEstateList(presenter, currentType, page, housePriceKey, regionId, houseTypeKey, keyword);
-        refreshLayout.froceRefreshToState(true);
+//        refreshLayout.froceRefreshToState(true);
     }
 
 
@@ -91,12 +92,15 @@ public class FgHome extends MvpFragment<MvpPresenter>
         adapter.setOnLoadMoreListener(this, rv);
         adapter.setOnItemClickListener(this);
 
+        ArrayList<NewListBean.DataBean> dataBeans = new ArrayList<>();
+        dataBeans.add(new NewListBean.DataBean());
+        adapter.setNewData(dataBeans);
     }
 
 
     @Override
     public void onItemClick(BaseQuickAdapter adapter, View view, int position) {
-
+        getActivity().startActivity(ActivityDetailActivity.getIntent(getContext()));
     }
 
 
@@ -128,7 +132,6 @@ public class FgHome extends MvpFragment<MvpPresenter>
         adapter.getData().clear();
         presenter.setNeedDialog(false);
         page = 1;
-
     }
 
 

@@ -19,7 +19,6 @@ import com.zhy.autolayout.AutoRelativeLayout;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
-
 import me.yokeyword.fragmentation.SupportActivity;
 
 /**
@@ -75,19 +74,28 @@ public abstract class BaseActivity extends SupportActivity {
         getWindow().setBackgroundDrawable(null);
         setContentView(R.layout.activity_base);
         containerView = (AutoFrameLayout) findViewById(R.id.flContainer);
-        AutoRelativeLayout toolBar = (AutoRelativeLayout) findViewById(R.id.rlToobar);
+        initToolBar();
+        contentView = LayoutInflater.from(this).inflate(getViewLayout(), null, false);
+        mUnbinder = ButterKnife.bind(this, contentView);
+        addContentView(contentView);
+        initView(savedInstanceState, toolbarHolder, getIntent());
+    }
 
+    private void initToolBar() {
+        AutoRelativeLayout toolBar = (AutoRelativeLayout) findViewById(R.id.rlToobar);
         if (getToolBarLayout() == NO_TOOLBAR) {
             toolBar.setVisibility(View.GONE);
         } else {
             toolBar.setVisibility(View.VISIBLE);
             toolbarHolder = new ToolbarHolder(toolBar);
         }
+    }
 
-        contentView = LayoutInflater.from(this).inflate(getViewLayout(), null, false);
-        mUnbinder = ButterKnife.bind(this, contentView);
-        addContentView(contentView);
-        initView(savedInstanceState, toolbarHolder, getIntent());
+    protected ToolbarHolder getToolbarHolder() {
+        if (toolbarHolder == null) {
+            initToolBar();
+        }
+        return toolbarHolder;
     }
 
 
@@ -142,6 +150,8 @@ public abstract class BaseActivity extends SupportActivity {
         public TextView tvLeftTitle;
         @BindView(R.id.ivRight)
         public ImageView ivRight;
+        @BindView(R.id.ivMiddleRight)
+        public ImageView ivMiddleRight;
         @BindView(R.id.rlToobar)
         public AutoRelativeLayout rlToobar;
 

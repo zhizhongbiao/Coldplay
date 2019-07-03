@@ -29,7 +29,7 @@ import butterknife.OnClick;
  * Desc :
  */
 
-public class MyFragment extends MvpFragment<MvpPresenter> {
+public class MyFg extends MvpFragment<MvpPresenter> {
 
     @BindView(R.id.tvAgentName)
     TextView tvAgentName;
@@ -44,9 +44,9 @@ public class MyFragment extends MvpFragment<MvpPresenter> {
     ImageView ivAvatar;
 
 
-    public static MyFragment newInstance() {
-        MyFragment myFragment = new MyFragment();
-        return myFragment;
+    public static MyFg newInstance() {
+        MyFg myFg = new MyFg();
+        return myFg;
     }
 
 
